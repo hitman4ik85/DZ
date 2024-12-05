@@ -1,0 +1,15 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Список Продукції";
+}
+
+<div>
+    <h1 class="product-name">@Model.Name</h1>
+    <h2 class="product-price">Ціна: @Model.Price $</h2>
+    <br />
+    <p><b>Опис:</b> @ViewBag.Description</p>
+    <p><b>Дата виготовлення:</b> @ViewData["ManufactureDate"]</p>
+    <p><b>Категорія:</b> @Model.Category.Name</p>
+    <p><b>Опис категорії:</b> @ViewBag.CategoryDescription</p>
+    <p><b>Знижка:</b> @Model.Category.Discount%</p>
+</div>
