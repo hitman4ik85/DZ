@@ -1,0 +1,41 @@
+﻿@model DZ2.Models.Manager
+
+<h2>Додати менеджера</h2>
+
+<form method="post">
+    <label>Ім'я:</label>
+    <input type="text" asp-for="Name" />
+    <span asp-validation-for="Name" style="color: red;"></span>
+    <br /><br />
+
+    <label>Прізвище:</label>
+    <input type="text" asp-for="Surname" />
+    <span asp-validation-for="Surname" style="color: red;"></span>
+    <br /><br />
+
+    <label>Дата народження:</label>
+    <input type="date" asp-for="DateOfBirth" />
+    <span asp-validation-for="DateOfBirth" style="color: red;"></span>
+    <br /><br />
+
+    <label>Стать:</label>
+    <select asp-for="Gender">
+        <option value="">Оберіть стать</option>
+        <option value="Чоловік">Чоловік</option>
+        <option value="Жінка">Жінка</option>
+    </select>
+    <span asp-validation-for="Gender" style="color: red;"></span>
+    <br /><br />
+
+    <label>Посада:</label>
+    <input type="text" asp-for="Position" />
+    <span asp-validation-for="Position" style="color: red;"></span>
+    <br /><br />
+
+    <label>Зарплата:</label>
+    <input type="number" asp-for="Salary" />
+    <span asp-validation-for="Salary" style="color: red;"></span>
+    <br /><br />
+
+    <button type="submit">Додати</button>
+</form>

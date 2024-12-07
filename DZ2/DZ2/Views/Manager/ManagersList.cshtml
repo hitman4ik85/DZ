@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DZ2.Models.Manager>
+@{
+    ViewData["Title"] = "Список Менеджерів";
+}
+<h2>Список менеджерів</h2>
+<a asp-controller="Employee" asp-action="EmployeesList">Повернутися до списку працівників</a>
+<br />
+<br />
+
+<a asp-action="AddManager">Додати менеджера</a>
+<br />
+<br />
+
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Дата народження</th>
+            <th>Стать</th>
+            <th>Посада</th>
+            <th>Зарплата</th>
+            <th>Кількість працівників</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var manager in Model)
+        {
+            <tr>
+                <td>@manager.Name</td>
+                <td>@manager.Surname</td>
+                <td>@manager.DateOfBirth?.ToString("dd MMMM yyyy р.", new System.Globalization.CultureInfo("uk-UA"))</td>
+                <td>@manager.Gender</td>
+                <td>@manager.Position</td>
+                <td>@manager.Salary?.ToString("F2") $</td>
+                <td>@manager.EmployeeCount</td>
+            </tr>
+        }
+    </tbody>
+</table>

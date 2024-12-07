@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\views\\manager\\managerslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\views\\manager\\managerslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\views\\employee\\employeeslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\views\\employee\\employeeslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\data\\managerdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\data\\managerdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\data\\employeedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\data\\employeedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\views\\employee\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\views\\employee\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\views\\manager\\addmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\views\\manager\\addmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz2\\dz2\\data\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DB2470-314E-402A-88F4-CDF3ED8DE305}|DZ2\\DZ2.csproj|solutionrelative:dz2\\data\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "DZ2\\Models\\Employee.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Models\\Employee.cs",
+              "RelativeToolTip": "DZ2\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T23:33:10.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "DZ2\\Models\\Manager.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Models\\Manager.cs",
+              "RelativeToolTip": "DZ2\\Models\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T13:58:55.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "DZ2\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "DZ2\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T23:35:39.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "DZ2\\Controllers\\ManagerController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "DZ2\\Controllers\\ManagerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T15:00:58.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeesList.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Employee\\EmployeesList.cshtml",
+              "RelativeDocumentMoniker": "DZ2\\Views\\Employee\\EmployeesList.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Employee\\EmployeesList.cshtml",
+              "RelativeToolTip": "DZ2\\Views\\Employee\\EmployeesList.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T23:36:36.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManagersList.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Manager\\ManagersList.cshtml",
+              "RelativeDocumentMoniker": "DZ2\\Views\\Manager\\ManagersList.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Manager\\ManagersList.cshtml",
+              "RelativeToolTip": "DZ2\\Views\\Manager\\ManagersList.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T15:03:58.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddEmployee.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Employee\\AddEmployee.cshtml",
+              "RelativeDocumentMoniker": "DZ2\\Views\\Employee\\AddEmployee.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Employee\\AddEmployee.cshtml",
+              "RelativeToolTip": "DZ2\\Views\\Employee\\AddEmployee.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T23:36:55.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddManager.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Manager\\AddManager.cshtml",
+              "RelativeDocumentMoniker": "DZ2\\Views\\Manager\\AddManager.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Views\\Manager\\AddManager.cshtml",
+              "RelativeToolTip": "DZ2\\Views\\Manager\\AddManager.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T13:50:51.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeDatabase.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Data\\EmployeeDatabase.cs",
+              "RelativeDocumentMoniker": "DZ2\\Data\\EmployeeDatabase.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Data\\EmployeeDatabase.cs",
+              "RelativeToolTip": "DZ2\\Data\\EmployeeDatabase.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T23:35:16.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerDatabase.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Data\\ManagerDatabase.cs",
+              "RelativeDocumentMoniker": "DZ2\\Data\\ManagerDatabase.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Data\\ManagerDatabase.cs",
+              "RelativeToolTip": "DZ2\\Data\\ManagerDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T15:23:51.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDatabase.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Data\\IDatabase.cs",
+              "RelativeDocumentMoniker": "DZ2\\Data\\IDatabase.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Data\\IDatabase.cs",
+              "RelativeToolTip": "DZ2\\Data\\IDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T23:34:31.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Program.cs",
+              "RelativeDocumentMoniker": "DZ2\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ2\\DZ2\\Program.cs",
+              "RelativeToolTip": "DZ2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T23:37:23.837Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
