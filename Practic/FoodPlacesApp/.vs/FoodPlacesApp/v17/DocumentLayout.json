@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\views\\foodplace\\editfoodplace.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\views\\foodplace\\editfoodplace.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\views\\foodplace\\deletefoodplace.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\views\\foodplace\\deletefoodplace.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\views\\foodplace\\getfoodplaces.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\views\\foodplace\\getfoodplaces.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\views\\foodplace\\addfoodplace.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\views\\foodplace\\addfoodplace.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\models\\foodplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\models\\foodplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\data\\foodplacedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\data\\foodplacedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\data\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\data\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\practic\\foodplacesapp\\foodplacesapp\\controllers\\foodplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{719F75BB-65B1-41DD-BA85-DF02BB8A3090}|FoodPlacesApp\\FoodPlacesApp.csproj|solutionrelative:foodplacesapp\\controllers\\foodplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Program.cs",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Program.cs",
+              "RelativeToolTip": "FoodPlacesApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:13:46.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditFoodPlace.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\EditFoodPlace.cshtml",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Views\\FoodPlace\\EditFoodPlace.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\EditFoodPlace.cshtml",
+              "RelativeToolTip": "FoodPlacesApp\\Views\\FoodPlace\\EditFoodPlace.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T18:13:30.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteFoodPlace.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\DeleteFoodPlace.cshtml",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Views\\FoodPlace\\DeleteFoodPlace.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\DeleteFoodPlace.cshtml",
+              "RelativeToolTip": "FoodPlacesApp\\Views\\FoodPlace\\DeleteFoodPlace.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T18:13:12.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetFoodPlaces.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\GetFoodPlaces.cshtml",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Views\\FoodPlace\\GetFoodPlaces.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\GetFoodPlaces.cshtml",
+              "RelativeToolTip": "FoodPlacesApp\\Views\\FoodPlace\\GetFoodPlaces.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T18:12:39.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddFoodPlace.cshtml",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\AddFoodPlace.cshtml",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Views\\FoodPlace\\AddFoodPlace.cshtml",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Views\\FoodPlace\\AddFoodPlace.cshtml",
+              "RelativeToolTip": "FoodPlacesApp\\Views\\FoodPlace\\AddFoodPlace.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T18:12:02.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodPlace.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Models\\FoodPlace.cs",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Models\\FoodPlace.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Models\\FoodPlace.cs",
+              "RelativeToolTip": "FoodPlacesApp\\Models\\FoodPlace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:11:07.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FoodPlaceDatabase.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Data\\FoodPlaceDatabase.cs",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Data\\FoodPlaceDatabase.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Data\\FoodPlaceDatabase.cs",
+              "RelativeToolTip": "FoodPlacesApp\\Data\\FoodPlaceDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:10:52.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDatabase.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Data\\IDatabase.cs",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Data\\IDatabase.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Data\\IDatabase.cs",
+              "RelativeToolTip": "FoodPlacesApp\\Data\\IDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:10:35.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FoodPlaceController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Controllers\\FoodPlaceController.cs",
+              "RelativeDocumentMoniker": "FoodPlacesApp\\Controllers\\FoodPlaceController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\Practic\\FoodPlacesApp\\FoodPlacesApp\\Controllers\\FoodPlaceController.cs",
+              "RelativeToolTip": "FoodPlacesApp\\Controllers\\FoodPlaceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:10:05.726Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

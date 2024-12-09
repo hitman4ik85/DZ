@@ -1,0 +1,29 @@
+﻿@model IEnumerable<FoodPlacesApp.Models.FoodPlace>
+
+<a asp-action="AddFoodPlace" class="btn btn-primary">Add New Food Place</a>
+
+<h1>Food Places</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Average Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var foodPlace in Model)
+        {
+            <tr>
+                <td>@foodPlace.Name</td>
+                <td>@foodPlace.Address</td>
+                <td>$ @foodPlace.AveragePrice</td>
+                <td>
+                    <a class="btn btn-warning" asp-action="EditFoodPlace" asp-route-id="@foodPlace.Id">Edit</a>
+                    <a class="btn btn-danger" asp-action="DeleteFoodPlace" asp-route-id="@foodPlace.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

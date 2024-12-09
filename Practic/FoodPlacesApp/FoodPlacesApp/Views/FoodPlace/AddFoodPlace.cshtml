@@ -1,0 +1,17 @@
+﻿@model FoodPlacesApp.Models.FoodPlace
+
+<form method="post">
+    <label>Name:</label>
+    <input type="text" asp-for="Name" />
+    <br /><br />
+
+    <label>Address:</label>
+    <input type="text" asp-for="Address" />
+    <br /><br />
+
+    <label>Average Price:</label>
+    <input type="number" asp-for="AveragePrice" />
+    <br /><br />
+
+    <input type="submit" value="Add" />
+</form>

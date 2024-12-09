@@ -1,0 +1,19 @@
+﻿@model FoodPlacesApp.Models.FoodPlace
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <label>Name:</label>
+    <input type="text" asp-for="Name" />
+    <br /><br />
+
+    <label>Address:</label>
+    <input type="text" asp-for="Address" />
+    <br /><br />
+
+    <label>Average Price:</label>
+    <input type="number" asp-for="AveragePrice" />
+    <br /><br />
+
+    <input type="submit" value="Edit" class="btn btn-warning" />
+</form>
+<a asp-action="GetFoodPlaces" class="btn btn-secondary">Go back</a>
