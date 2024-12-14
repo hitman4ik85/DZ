@@ -1,0 +1,22 @@
+﻿@model DZ3.Models.Book
+
+<form method="post">
+    <label>Name Book: </label>
+    <input type="text" name="name" asp-for="Name" />
+
+    <label>Author First Name: </label>
+    <input type="text" name="authorFirstName" value="" />
+
+    <label>Author Last Name: </label>
+    <input type="text" name="authorLastName" value="" />
+    <br /><br />
+
+    <label>Price: </label>
+    <input type="number" name="price" asp-for="Price" />
+
+    <label>Pages: </label>
+    <input type="number" name="pages" asp-for="Pages" />
+    <br /><br />
+
+    <input class="btn btn-warning" type="submit" value="Add" />
+</form>

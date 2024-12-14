@@ -1,0 +1,13 @@
+﻿@model DZ3.Models.Book
+
+<h2>Are you sure you want to delete this book?</h2>
+<p>@Model.Name</p>
+<p>@Model.Author.FirstName @Model.Author.LastName</p>
+<p>$ @Model.Price</p>
+<p>@Model.Pages pages</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <input class="btn btn-danger" type="submit" value="Delete" />
+</form>
+<a asp-action="GetBooks">Cancel</a>

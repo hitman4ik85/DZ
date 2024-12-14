@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DZ3.Models.Book>
+@{
+    ViewData["Title"] = "Books";
+}
+<a asp-action="AddBook">Create new book</a>
+
+<h1>Books</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Pages</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Name</td>
+                <td>@book.Author.FirstName @book.Author.LastName</td>
+                <td>$ @book.Price</td>
+                <td>@book.Pages</td>
+                <td>
+                    <a class="btn btn-danger" asp-action="DeleteBook" asp-route-id="@book.Id">Delete</a>
+                    <a class="btn btn-warning" asp-action="EditBook" asp-route-id="@book.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

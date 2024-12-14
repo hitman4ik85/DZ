@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodPlacesApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8a75097081f044be63b719c9e135bc1cc994f88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b375e7d60ce4cc6dcfce38f80d82b942ea034e24")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodPlacesApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodPlacesApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
