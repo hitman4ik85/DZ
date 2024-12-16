@@ -1,0 +1,117 @@
+SOLID - 5 принципів.
+D - Dependency inversion(інверсія залежностей). Якщо в нас є звязок між класами, чи між будь чим, то він повинен йти через абстракцію.
+Умовно в нас є клас Worker(Name, LastName, Instrument), і в нас буде ще один клас Hummer(.....), то в нас буде звязок, що наш працівник 
+працює цим інструментом, але робітники можуть мати декілька різних інструментів які можуть змінюватись, але є "сильна залежність", коли 
+в нас є обовязково молоток і всі похідні від нього, тобто інший вид ми вже ніяк не дамо. Це вірішується через абстракцію, між ними додаємо 
+абстрактний базовий клас InstrumentBase, від нього буде наслідуватись Hummer. Тепер Worker може мати Hummer через цей абстрактний клас,
+це буде "слабка залежність". Це 5-тий принцип солід, коли все в нас через абстрактні класи або через інтерфейси повязується.
+
+Нехай в нас буде:
+public class Worker
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public IInstrument Instrument { get; set; } = new Hummer(); //
+}
+
+//public abstract class Instrument //Якщо клас abstract то ми не можемо виділити під нього память та його використовувати.
+//{				   //Він тепер просто для наслідування. Але тип даних ми маємо право використовувати.
+//    public abstract void DoWork(); //Навіть метод коли робимо абстрактним, він не матиме ніякої реалізації.
+//}				     //Але вона повинна бути обовязковою для всіх наших наступників.
+				//Абстрактний тип даних дозволяє нам передавати будь який клас який буде наслідуватись ---
+				//public IInstrument Instrument { get; set; } = new Hummer();
+
+public interface IInstrument  //Можемо робити через інтерфейс, і можено наслідуватись через нього, працює так само, але тепер 
+{			      //можемо без public override void 
+    public string DoWork();
+}
+
+public class Hummer : IInstrument //метод, через який інструмент буде робити якусь свою роботу
+{
+    public string DoWork()  //Якщо ми не визначимо цей метод то буде помилка, через те що він є вище абстрактним.
+    {
+        return "Work with Hummer";
+    }
+}
+
+public class Shovel : IInstrument
+{
+    public string DoWork()   //public override void DoWork(){}
+    {
+        return "Work with Shovel";
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+D - Dependency Injection(внедрення залежностей). Це патерн програмування, він дуже повязаний з Dependency inversion по логіці, 
+тепер ми будемо автоматично звязувати усі наші класи через слабкий звязок(абстракцію). Тобто можемо дати наприклад клас Hummer, 
+і будемо мати або абсрактний клас або інтерфейс, наприклад нехай інтерфейс IInstrument, між ними є звязок, який імпліментує 
+цей інтерфейс. Кожного разу коли ми в коді звертаємось до інструменту IInstrument, ми зразу перейдемо до нього і побачимо, що 
+IInstrument наслідується парою з Hummer, знайшли це і передали його(Hummer) до нашого запросу.
+
+Dependency Injection - завжди робиться в Program.cs --- DI ---
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+//================ DI ==============
+
+//Спочатку звертаємось до нього, потім у нас на вибір є 3 методи Add....
+//builder.Services.AddTransient
+//builder.Services.AddScoped
+//builder.Services.AddSingelton
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddSingleton<IInstrument, Hummer>(); //Спочатку у <>, йде абстракція(IInstrument) а за нею реалізація(Hummer).
+//Тепер, як тільки ми захочимо звернутися до IInstrument, ми завжди будемо отримувати наш Hummer.				      
+                
+//===================================
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Тепер у нашій вьюшці, пишемо наступне:
+
+@inject IHttpContextAccessor accessor
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+	@(accessor.HttpContext.RequestServices.GetRequiredService<IInstrument>().DoWork())
+        </h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Тепер коли запустимо то нам відображить "Work with Hummer", якщо замінимо ось тут(builder.Services.AddSingleton<IInstrument, Hummer>();)
+на Shovel, то відобразить "Work with Shovel".
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+---Ми зайшли на Index.cshtml і просто дістали обєкт який нам був потрібен @(accessor.HttpContext.RequestServices.GetRequiredService<IInstrument>().DoWork()),
+але не вказали який іменно потрібен інструмент, далі ASP.NET подивився, що у нас інтерфейс(IInstrument), тоді заходимо в програм і бачимо, 
+що в нас IInstrument зареестровано з Hummer(потипу список) (builder.Services.AddSingleton<IInstrument, Hummer>();), який вертає клас Hummer, 
+створюється обєкт Hummer, та передається ось сюди( @(accessor.HttpContext.RequestServices.GetRequiredService<IInstrument>().DoWork()) ), замість
+IInstrument. Далі воно просто зайду в реалізований класс Hummer, та поверне ось цей рядок(return "Work with Hummer";).---
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

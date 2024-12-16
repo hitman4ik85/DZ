@@ -1,0 +1,773 @@
+---------------------------------------------------------------------------------------------------------------------------------
+1 пара
+---------------------------------------------------------------------------------------------------------------------------------
+
+Наприклад, створимо клас Computer.cs ---
+
+namespace Lesson4._1.Models;
+
+public class Computer
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Далі додамо ComputerService.cs , для опису логіки роботи з компьютером, наприклад додавати,
+виводити, видаляти їх і так далі --- 
+
+using Lesson4._1.Data;
+using Lesson4._1.Models;
+
+namespace Lesson4._1;
+
+public class ComputerService : IComputerService //наслідуємось від інтерфейсу нашого та імплементуємо
+{						//натиснувши Alt+Enter і має зявитися меню
+    public void AddComputer(Computer computer)
+    {
+
+    }
+
+    public List<Computer> GetComputers()  //наповнимо декількома
+    {
+        return new List<Computer>
+        {
+            new Computer() { Id = 1, Name = "Windows" },
+            new Computer() { Id = 2, Name = "MacOS" },
+            new Computer() { Id = 3, Name = "Linux" },
+        };
+    }
+
+    public void RemoveComputer(Computer computer)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void UpdateComputer(int id, Computer computer)
+    {
+        throw new NotImplementedException();
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+І для нього ми робимо відразу інтерфейс, це так потрібно робити завжди  IComputerService.cs , 
+де описані методи, з якими ми будемо працювати ---
+
+using Lesson4._1.Models;
+
+namespace Lesson4._1;
+
+public interface IComputerService
+{
+    List<Computer> GetComputers();  //вертаємо список наших компютеров
+    void AddComputer(Computer computer);  //додати комп
+    void RemoveComputer(Computer computer); //видалити
+    void UpdateComputer(int id, Computer computer); //оновити
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Тепер нам потрібен контроллер для наших компютеров ComputerController.cs , тут має бути робота 
+з фронтентом, тобто які ми дані приймаємо та які віддаємо ---
+
+using Microsoft.AspNetCore.Mvc;
+
+namespace Lesson4._1.Controllers;
+
+public class ComputerController : Controller
+{
+    private readonly IComputerService _computerService;   //обовязково через інтерфейс
+
+    public ComputerController(IComputerService computerService)  //і генеруємо конструктор
+    {
+        _computerService = computerService;
+    }
+
+    public IActionResult GetComputers()  //повертаємо наші компютери на вьюшку
+    {
+        var computers = _computerService.GetComputers();  //отримуємо їх
+        return View(computers);  //та передаємо
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Тепер нам потрібна вьюшка Views\Computer\GetComputers.cshtml , де через цикл виводимо наші компютера --- 
+
+@model List<Computer>
+
+@foreach(var computer in Model)
+{
+    <h1>@computer.Id   @computer.Name</h1>
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+І тепер всюди наші IComputerService(у ComputerController.cs), замість них потрібно щоб стали наші конкретні 
+класи, тому в Program.cs пишемо наступне ---
+
+using Lesson4._1;
+using Lesson4._1.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+// ============== DI ================
+
+builder.Services.AddSingleton<IComputerService, ComputerService>(); //передаємо нашу абстракцію і конкретний клас
+builder.Services.AddSingleton<IDatabase, ComputerDatabase>();
+
+// ==================================
+
+var app = builder.Build();
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Computer}/{action=GetComputers}/{id?}");
+
+app.Run();
+
+
+
+--- Коли ми заходимо на нашу сторінку Computer\GetComputers, ASP.NET відразу розуміє, що нам потрібен 
+контроллер Computer, та в нього ось такий метод GetComputers, де ми заходимо до нього і далі нам потрібен 
+наш _computerService, але в нього інтерфейс який вказує на память, але що конктерно там зберігається невідомо, 
+але завдяки депенденсіінжекшен автоматично передало туди ComputerService з нашими компютерами, 
+який ми передали в Program.cs. ---
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+2 пара
+---------------------------------------------------------------------------------------------------------------------------------
+Тепер булоб добре нам якось зберігати наші дані, тому знову робимо папку Data ля збереження наших даних, і в неї
+інтерфейс IDatabase.cs --- 
+
+using Lesson4._1.Models;
+
+namespace Lesson4._1.Data;
+
+public interface IDatabase
+{
+    List<Computer> GetAll();
+    void Add(Computer computer);
+    void Delete(Computer computer);
+    void Update(int id, Computer computer);
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Тепер зробимо йому конкретну реалізацію в ційже папці Data\ComputerDatabase.cs , де імплементуємо наш інтерфейс ---
+
+using Lesson4._1.Models;
+
+namespace Lesson4._1.Data;
+
+public class ComputerDatabase : IDatabase
+{
+    private readonly List<Computer> _computers = new List<Computer>();  //робимо умовну базу даних
+    private static int _counter = 0;  //він буде завжди існувати(static) і не залежатиме від кількості, 
+				      //щоб не сталося два id однакових
+    public void Add(Computer computer)
+    {
+        computer.Id = ++_counter; //додавання Id
+        _computers.Add(computer); //додавання компьютера
+    }
+
+    public void Delete(Computer computer)
+    {
+        _computers.RemoveAll(x => x.Id == computer.Id);
+    }
+
+    public List<Computer> GetAll()
+    {
+        return _computers;
+    }
+
+    public void Update(int id, Computer computer)
+    {
+        int index = _computers.FindIndex(x => x.Id == id); //знаходимо за id
+        _computers[index] = computer;  //змінюємо
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Тепер заходимо в ComputerService.cs , де вже будемо використовувати нашу базу даних яку визначили у 
+ComputerDatabase.cs ---
+
+using Lesson4._1.Data;
+using Lesson4._1.Models;
+
+namespace Lesson4._1;
+
+public class ComputerService : IComputerService
+{ 							//--- ДепенденсІнжекшен ---
+    private readonly IDatabase _computerDatabase;  //передаємо інтерфейс
+
+    public ComputerService(IDatabase computerDatabase) //генеруємо конструктор
+    {
+        _computerDatabase = computerDatabase; //робимо присвоєння
+    }
+
+    public void AddComputer(Computer computer)
+    {
+	ValidateComputer(computer);
+
+        _computerDatabase.Add(computer);
+    }
+
+    public List<Computer> GetComputers()
+    {
+	return _computerDatabase.GetAll(); //тепер просто повертаємо наші компютера завдяки ДепІнж
+    }
+
+    public void RemoveComputer(Computer computer)
+    {
+	if(!ComputerExists(computer.Id)) 
+	{
+            throw new ArgumentException();
+	}
+        _computerDatabase.Delete(computer);
+    }
+
+    public void UpdateComputer(int id, Computer computer)
+    {
+	ValidateComputer(computer);
+	if(!ComputerExists(computer.Id)) 
+	{
+            throw new ArgumentException();
+	}
+        _computerDatabase.Update(id, computer);
+    }
+
+    public void ValidateComputer(Computer computer)
+    {
+	if (string.IsNullOrEmpty(computer.Name))
+        {
+            throw new ArgumentException();
+        }
+    }
+
+    private bool ComputerExists(int id)
+    {
+	return _computerDatabase.GetAll().Any(x => x.Id == id);
+
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Тепер, тут ми можемо робити якісь перетворення, валідацію або ще щось, але головне, що логіка роботи з 
+базою даних тепер у нас лежить в одному класі Data\ComputerDatabase.cs , логіка обробки, валідації наших 
+компютеров лежить у нашому ComputerService.cs , а логіка роботи з зовнішнім компонентом нашими вьюшками 
+лежить в контроллері Controllers\ComputerController.cs . Це перший принцип СинглРеспонсибюліті, тобто 
+кожен клас відповідає за щось одне.
+Тепер для того, щоб інтерфейс IDatabase запрацював, нам потрібно його додати до Program.cs 
+(builder.Services.AddSingleton<IDatabase, ComputerDatabase>();)
+
+Останнє, що лишилось це контроллер та вьюшки, зробимо його додавання автоматично --- 
+ComputerController.cs видаляємо, та у папці Viewvs, папку \Computer\GetComputers.cshtml теж видалимо.
+Ні вьюшек ні контроллера ц нас немає. Тепер самому компьютеру додамо властивостей щоб виглядало краще --- 
+namespace Lesson4._1.Models;
+
+public class Computer
+{
+    public int Id { get; set; }
+    public string OperationSystem { get; set; }
+    public int RAM { get; set; }
+    public int SSD { get; set; }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+І тепер на папці Controllers правою кнопкою миші -> Add(Добавить) -> Controller(Контроллер).
+Обераємо з трьох контроллерів -> using Antity Framework 
+-> Model class(Класс модели): Computer (Lesson4._1.Models) --- обираємо нашу модель
+-> DbContext class(Класс DbContext) -> + : Lesson4._1.Data.Lesson4_1Context -> Add(Добавить)
+-> Database provaider(Поставщик баз даных) -> SQL Server
+
+-> ... -> Ось тут бажано заходити до Viewvs\Shared\_Layout.cshtml
+
+-> Add(Добавить)
+
+(З найменшими помилками воно не створить його, треба ретельно все переглядати у проекті, 
+до створення(навіть жовті хвилясті))
+---------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------
+В нас тепер створився наш контроллер ComputersController.cs , додався context(private readonly Lesson4_1Context _context;) 
+для бази даних, який передається через ДепенденсіЕнжекшен(public ComputersController(Lesson4_1Context context){_context = context;}), 
+що дуже важливо. Далі повністю описані наші методи, які нам будуть потрібні.
+---------------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Lesson4._1.Data;
+using Lesson4._1.Models;
+
+namespace Lesson4._1.Controllers
+{
+    public class ComputersController : Controller
+    {
+        private readonly Lesson4_1Context _context;
+
+        public ComputersController(Lesson4_1Context context)
+        {
+            _context = context;
+        }
+
+        // GET: Computers
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Computer.ToListAsync());
+        }
+
+        // GET: Computers/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var computer = await _context.Computer
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (computer == null)
+            {
+                return NotFound();
+            }
+
+            return View(computer);
+        }
+
+        // GET: Computers/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Computers/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,Name,OperationSystem,RAM,SSD")] Computer computer)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(computer);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(computer);
+        }
+
+        // GET: Computers/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var computer = await _context.Computer.FindAsync(id);
+            if (computer == null)
+            {
+                return NotFound();
+            }
+            return View(computer);
+        }
+
+        // POST: Computers/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,OperationSystem,RAM,SSD")] Computer computer)
+        {
+            if (id != computer.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(computer);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ComputerExists(computer.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(computer);
+        }
+
+        // GET: Computers/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var computer = await _context.Computer
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (computer == null)
+            {
+                return NotFound();
+            }
+
+            return View(computer);
+        }
+
+        // POST: Computers/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var computer = await _context.Computer.FindAsync(id);
+            if (computer != null)
+            {
+                _context.Computer.Remove(computer);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool ComputerExists(int id)
+        {
+            return _context.Computer.Any(e => e.Id == id);
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Та у папці Views додалась папка Computers з вже 5тьма вьюшками:
+---------------------------------------------------------------------------------------------------------------------------------
+1-Index.cshtml - Вивід наших компьютерів
+
+@model IEnumerable<Lesson4._1.Models.Computer>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>  //звертаємось до actiona Create, щоб відкрити сторінку Create
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name  //можно без ціх заглушок @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                OperationSystem
+            </th>
+            <th>
+                RAM
+            </th>
+            <th>
+                SSD
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Name  //тут також бможно без заглушок @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @item.OperationSystem
+            </td>
+            <td>
+                @item.RAM
+            </td>
+            <td>
+                @item.SSD
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+---------------------------------------------------------------------------------------------------------------------------------
+2-Edit.cshtml - Редагування компьютерів
+
+@model Lesson4._1.Models.Computer
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Computer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OperationSystem" class="control-label"></label>
+                <input asp-for="OperationSystem" class="form-control" />
+                <span asp-validation-for="OperationSystem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM" class="control-label"></label>
+                <input asp-for="RAM" class="form-control" />
+                <span asp-validation-for="RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SSD" class="control-label"></label>
+                <input asp-for="SSD" class="form-control" />
+                <span asp-validation-for="SSD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+---------------------------------------------------------------------------------------------------------------------------------
+3-Details.cshtml - Деталі наших компьютерів
+
+@model Lesson4._1.Models.Computer
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Computer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Name //@Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            Name //@Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            OperationSystem
+        </dt>
+        <dd class = "col-sm-10">
+            OperationSystem
+        </dd>
+        <dt class = "col-sm-2">
+            RAM
+        </dt>
+        <dd class = "col-sm-10">
+            RAM
+        </dd>
+        <dt class = "col-sm-2">
+            SSD
+        </dt>
+        <dd class = "col-sm-10">
+            SSD
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+---------------------------------------------------------------------------------------------------------------------------------
+4-Delete.cshtml - Видалення компьютерів
+
+@model Lesson4._1.Models.Computer
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Computer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Name //@Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            Name //@Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            OperationSystem
+        </dt>
+        <dd class = "col-sm-10">
+            OperationSystem
+        </dd>
+        <dt class = "col-sm-2">
+            RAM
+        </dt>
+        <dd class = "col-sm-10">
+            RAM
+        </dd>
+        <dt class = "col-sm-2">
+            SSD
+        </dt>
+        <dd class = "col-sm-10">
+            SSD
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />   //щоб отримати наше id робимо через привязку asp-for та робимо його скритим
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+---------------------------------------------------------------------------------------------------------------------------------
+5-Create.cshtml - Створення компьютерів
+
+@model Lesson4._1.Models.Computer
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Computer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>  //спеціальний div для того щоб робити валідацію
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>  //для кожного inputa є текст з валідацією
+            </div>
+            <div class="form-group">
+                <label asp-for="OperationSystem" class="control-label"></label>
+                <input asp-for="OperationSystem" class="form-control" />
+                <span asp-validation-for="OperationSystem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM" class="control-label"></label>
+                <input asp-for="RAM" class="form-control" />
+                <span asp-validation-for="RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SSD" class="control-label"></label>
+                <input asp-for="SSD" class="form-control" />
+                <span asp-validation-for="SSD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+			//це спеціальна секція яка викликає наш код для валідації
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+Трохи розглянемо і підредактуємо:
+У папці Data, потрібно зайти у Lesson4_1Context.cs --- 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Lesson4._1.Models;
+
+namespace Lesson4._1.Data
+{
+    public class Lesson4_1Context : DbContext
+    {
+        public Lesson4_1Context (DbContextOptions<Lesson4_1Context> options)
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
+
+        public DbSet<Lesson4._1.Models.Computer> Computer { get; set; } = default!;
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Та написати наступне:(public Lesson4_1Context (DbContextOptions<Lesson4_1Context> options)
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
+---------------------------------------------------------------------------------------------------------------------------------
+У Program.cs додався ось такий рядок( builder.Services.AddDbContext<Lesson4_1Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Lesson4_1Context") ?? 
+throw new InvalidOperationException("Connection string 'Lesson4_1Context' not found."))); ) - ДепенденсіЕнжекшен трохи
+у іншому вигляді
+---------------------------------------------------------------------------------------------------------------------------------
+
+Запускаємо проект та прописуємо /Computers/Index
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Ось це така можливість автогенерувати код проекту, але мінус в тому, що це все дуже в купі і воно максимально порушує 
+певні архітектурні правила, після чого це важко буде дуже переробляти.
+---------------------------------------------------------------------------------------------------------------------------------
