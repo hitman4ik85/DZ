@@ -55,4 +55,29 @@ public class UserController : ControllerBase
 
         return Created($"/users/{user.NickName}", user); // Status 201
     }
+
+
+    [HttpGet]
+    public ActionResult<IEnumerable<User>> GetUsersPaged([FromQuery] int skip, [FromQuery] int take)
+    {
+        var users = new List<User>(capacity: 1000);
+        for (int i = 0; i < 1000; i++)
+        {
+            var user = new User()
+            {
+                Id = i,
+                NickName = $"User{i}",
+                Password = "password" + i,
+                DateOfBirth = DateTime.Now.AddYears(-20).AddDays(i),
+                Description = $"Description for User{i}"
+            };
+            users.Add(user);
+        }
+
+        var pagedUsers = users
+            .Skip(skip * take)
+            .Take(take);
+            
+        return Ok(pagedUsers);
+    }
 }

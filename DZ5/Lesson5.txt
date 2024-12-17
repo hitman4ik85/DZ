@@ -1,0 +1,176 @@
+---Web-API ASP.NET Core (Майкрософт)---
+-----------------------------------------------------------------------------------------------------------------------------------
+Спочатку: створимо проект, оберемо .NET8.0, галочки: Настроить для HTTPS, Включить поддержку OpenAPI, Использовать контроллеры.
+Відразу видаляємо WeatherForecast.cs та у папці Controllers -> WeatherForecastController.cs.
+-----------------------------------------------------------------------------------------------------------------------------------
+Створимо папку Models, та в ній класс Book.cs --- 
+
+namespace Lesson5WebApi.Models;
+
+public class Book
+{
+    public int Id { get; set; } //обовязково
+    public string? Title { get; set; }
+    public string? Description { get; set; }
+    public int Pages { get; set; }
+    public int Price { get; set; }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Створимо у папці Controllers -> BookControllers.cs ---
+
+using Lesson5WebApi.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Lesson5WebApi.Controllers;
+
+[ApiController]  // обовязковий атрибут
+[Route("books")]  // обовязковий атрибут
+public class BookController : ControllerBase  //наслідування від класу
+{
+    // Status codes:
+    // 100-199 - information(просто інформація)
+    // 200-299 - success(вдалося виконати нашу операцію)
+    // 300-399 - redirect(умовно закинули наш реквест, та він переадресувався в інше місце)
+    // 400-499 - user error(помилки від користувача(неправильний реквест, немає авторизації та інше .....)
+    // 500 - server error(помилка програміста)
+
+
+
+    [HttpGet] // щоб ОТРИМАТИ список
+    public ActionResult<IEnumerable<Book>> GetBooks() // endpoint. --- (список книжок), та метод для нас
+    {                                          // пишемо завжди ActionResult<...> (щоб повернути наш статус(status))
+        var books = new List<Book>() { 
+        new Book()
+        {
+        Id = 1,
+        Title = "Test1",
+        Description = "Test1",
+        Pages = 44,
+        Price = 12
+        },
+        new Book()
+        {
+        Id = 2,
+        Title = "Test2",
+        Description = "Test2",
+        Pages = 55,
+        Price = 16
+        }
+
+        };
+
+        return Ok(books); // ( Ok(books) - status 200 );
+    }
+
+    [HttpGet("{id}")] // ОТРИМУЄМО дані по Id
+    public ActionResult<Book> GetBookById([FromRoute] int id)  // [FromRoute] - мається на увазі з нашого шляху, звідси ...("{id}")
+    {
+        var book = new Book()
+        {
+            Id = id,
+            Title = "Test1",
+            Description = "Test1",
+            Pages = 44,
+            Price = 12
+        };
+
+        return Ok(book);
+    }
+
+    [HttpPost] // Коли СТВОРЮЄМО(передаємо) нові дані
+    public ActionResult<Book> AddBook([FromBody] Book book)  // [FromBody] - взято з тіла реквеста
+    {
+        // add book do database
+        book.Id = new Random().Next(1, 1000000);
+
+        return Created($"/books/{book.Id}", book); // ( return Created(books) - status 201 )
+    }                                              // "/books/{book.Id}" - ссилка на нашу книжку(uri)
+
+    [HttpDelete("{id}")] // Коли ВИДАЛЯЄМО дані по Id
+    public ActionResult<int> DeleteBook([FromRoute] int id) // [FromRoute] - мається на увазі з нашого шляху, звідси ...("{id}")
+    {
+        //delete from database
+
+        return Ok(id);
+    }
+
+    [HttpPut] // ОНОВЛЮЄМО дані
+    public ActionResult<Book> UpdateBook([FromBody] Book book) //передаємо всю книжку, саме в тіло(body) реквеста
+    {
+        //update in database
+
+        return Ok(book); //вертаємо оновлену її
+    }
+
+    [HttpPatch("{id}")] //ЧАСТКОВЕ ОНОВЛЕННЯ даних по Id, наприклад Price
+    public ActionResult<Book> UpdatePrice([FromRoute] int id, [FromBody] int price) 
+    {
+        var book = new Book()
+        {
+            Id = id,
+            Title = "Test1",
+            Description = "Test1",
+            Pages = 44,
+            Price = price
+        };
+
+        return Ok(book);
+    }
+
+    // Пагінація, це отримання даних яких дуже багато, отримання по 3,(30) елемента(тів), тобто це один skip(пропуск), та take(візьмемо собі)
+    // Індексація - пишуть index або pageIndex, тобто передається індекс сторінки, спочатку index[0] це перші 3 елементи, потім index[1] і так
+    // далі домножається на 3 кожен раз
+    [HttpGet] // ОТРИМАННЯ даних //краще писати не List а IEnumerable
+    public ActionResult<IEnumerable<Book>> GetBooksPaged([FromQuery] int skip, [FromQuery] int take) // [FromQuery] - параметри, skip(/books?skip=0)take(/books?skip=0&take=3)
+    {                            // (/path(шлях)?parametr1={p1}&parametr2={p2}&.....) але їх не має бути багато, наприклад 3 це вже багато, тоді краще використати [FromBody]
+
+        var books = new List<Book>(capacity: 1000); // симуляція потипу в нас дуже багато книжок лежить
+        for (int i = 0; i < 1000; i++) 
+        {
+            var book = new Book()
+            {
+                Id = i,
+                Title = "Test",
+                Description = "Test",
+                Pages = new Random().Next(50, 1999),
+                Price = new Random().Next(10, 999)
+            };
+            books.Add(book);
+        }
+        var pagesBook = books
+            .Skip(skip) // пропустили стільки
+            .Take(take); // взяли стільки
+
+        return Ok(pagesBook);
+    }
+
+    //Завдання: додати ендпоінт на пагінацію користувачів по індексу:
+    //skip: 0, take: 3 -> [1, 2, 3]
+    //skip: 1, take: 3 -> [4, 5, 6]
+    //skip: 2, take: 3 -> [7, 8, 9]
+
+    public ActionResult<IEnumerable<Book>> GetBooksPagedByIndex([FromQuery] int skip, [FromQuery] int take)
+    {
+        var books = new List<Book>(capacity: 1000);
+        for (int i = 0; i < 1000; i++)
+        {
+            var book = new Book()
+            {
+                Id = i,
+                Title = $"Test {i}",
+                Description = "Test",
+                Pages = new Random().Next(50, 500),
+                Price = new Random().Next(500, 5000)
+            };
+            books.Add(book);
+        }
+        var pagesBook = books
+            .Skip(skip * take)
+            .Take(take);
+
+        return Ok(pagesBook);
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
