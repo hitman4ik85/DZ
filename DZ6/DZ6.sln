@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ6.API", "DZ6.API\DZ6.API.csproj", "{56B74C0F-463C-4586-A9BE-F7CC57952201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ6.Core", "DZ6.Core\DZ6.Core.csproj", "{8504F663-F385-4E73-8339-0A68E63AA79B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ6.Storage", "DZ6.Storage\DZ6.Storage.csproj", "{AB459526-EDCF-4F6C-A86C-108966804E69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56B74C0F-463C-4586-A9BE-F7CC57952201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B74C0F-463C-4586-A9BE-F7CC57952201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B74C0F-463C-4586-A9BE-F7CC57952201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B74C0F-463C-4586-A9BE-F7CC57952201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8504F663-F385-4E73-8339-0A68E63AA79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8504F663-F385-4E73-8339-0A68E63AA79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8504F663-F385-4E73-8339-0A68E63AA79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8504F663-F385-4E73-8339-0A68E63AA79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB459526-EDCF-4F6C-A86C-108966804E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB459526-EDCF-4F6C-A86C-108966804E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB459526-EDCF-4F6C-A86C-108966804E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB459526-EDCF-4F6C-A86C-108966804E69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

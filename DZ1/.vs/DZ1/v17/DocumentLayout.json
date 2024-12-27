@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz1\\dz1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|solutionrelative:dz1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz1\\dz1\\views\\product\\productslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|solutionrelative:dz1\\views\\product\\productslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz1\\dz1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|solutionrelative:dz1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz1\\dz1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|solutionrelative:dz1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B49B022-FC73-43C8-98BD-254EBDE8A97E}|DZ1\\DZ1.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz1\\dz1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ1\\DZ1\\Program.cs",
               "RelativeDocumentMoniker": "DZ1\\Program.cs",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "DZ1\\Program.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAzwB4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:23:29.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T20:23:29.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductsList.cshtml",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ1\\DZ1\\Views\\Product\\ProductsList.cshtml",
               "RelativeDocumentMoniker": "DZ1\\Views\\Product\\ProductsList.cshtml",
@@ -68,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ1\\DZ1\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "DZ1\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ1\\DZ1\\Controllers\\ProductController.cs",
               "RelativeToolTip": "DZ1\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T20:15:24.189Z",
               "EditorCaption": ""
@@ -89,8 +88,7 @@
               "RelativeToolTip": "DZ1\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:11:09.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T20:11:09.11Z"
             },
             {
               "$type": "Document",
@@ -102,8 +100,7 @@
               "RelativeToolTip": "DZ1\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:08:34.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T20:08:34.886Z"
             }
           ]
         }

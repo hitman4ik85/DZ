@@ -1,0 +1,510 @@
+---Працюємо з архітектурою слоями. 
+---У першому слої будуть API(контроллери, робота з API). Далі слой BLL(Buisnts Logic Layer) - найважливіший слой, де будуть наші моделі, 
+---сервіси, обрахування, калькуляції. Останній слой це DAL(Data Access Layer) - це слой для доступу до Бази Даних. Покищо будемо зберігати 
+---нашу Базу Даних локально.
+
+---Архітектура нашого додатку(API Server):
+---1. Слой API, буде знати про Бізнес Логіку(BLL), він буде отримувати з неї всякі різні дані, та буде знати про Бази Даних(через DAL).
+---2. База Даних(через DAL), буде знати тільки про Бізнес Логіку(BLL), тобто вона буде знати з чим ми працюємо, та що потрібно зберігати в нашому додатку.
+---3. DAL, буде знати про Базу Даних(покищо локальну).
+---Сама Бізнес Логіка взагалі не буде нічого знати про інші проекти, їй взагалі не важливо з якою Базою Даних ми працюємо, як ми виводимо дані користувачу, всерівно.
+---Вона лишається собою, без будь-яких зв'язків.
+
+---у Wisual Studio, створимо новий проект:
+---У New Solution, потрібно вибрати Web -> Web API(Веб-API ASP.NET Core)
+---Назвемо у Project name(Имя проекта): OnlineShopProject.API (щоб конктретно розуміти який це слой, для зручності)
+	у Solution name(Имя решения): OnlineShopProject
+---Вибір: .NET 8.0, Configure for HTTPS(Настроить для HTTPS), Eable OpenAPI support(Включить поддержку OpenAPI), UseControllers(Использовать контроллеры).
+---Одразу видаляємо WeatherForecast.cs та з папки Controllers теж його видаляємо WeatherForecastController.cs.
+
+---Тепер нам потрібно добавити ще два слої(Загалом їх три):
+---На Solution(Решение) правой кнопкою миші і Add(Добавить) New Project(Новый проект), і потрібно вибрати тип - Class Library(Библиотека класов (Майкрософт)), і назвемо OnlineShopProject.Core,
+---як основа нашого проекту. Та Class1.cs видаляємо.
+---На Solution(Решение) правой кнопкою миші і Add(Добавить) New Project(Новый проект), і потрібно вибрати тип - Class Library(Библиотека класов (Майкрософт)), і назвемо OnlineShopProject.Storage,
+---назва як сховище наших даних. Та Class1.cs видаляємо.
+---Все чудово, тепер у нас є ці 3 проекти, тепер нам потрібно їх ще зв'язати. Зараз вони один про одного нічого не знають, але нам потрібно буде зробити налаштування, 
+---щоб вони могли брати файли один в одного.
+---Розкриваємо проект API(OnlineShopProject.API), та в середені є Dependencis(Залежності), тобто ми будемо робити залежності між нашими проектами.
+---Правою кнопкою миші на Dependencis(Залежності) -> Reference(Добавить ссылку на проект) і тут обераємо галочками обидва проекти(OnlineShopProject.Core, OnlineShopProject.Storage).
+---Тепер заходимо в (OnlineShopProject.Storage), та правою кнопкою миші на Dependencis(Залежності) -> Reference(Добавить ссылку) і тут обераємо галочкою (OnlineShopProject.Core).
+
+---Щоб далі працювати нам потрібно скачати декілька NuGet пакетів, правою кнопкою миші на (Решение "OnlineShopProject") --> Управление пакетами NuGet --> 
+---Microsoft.EntityFrameworkCore (version 8.0.11)
+---Microsoft.EntityFrameworkCore.SqlServer (version 8.0.11)
+---Microsoft.EntityFrameworkCore.Tools (version 8.0.11)
+---Microsoft.EntityFrameworkCore.Design (version 8.0.11)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---Тепер будемо наповнювати наш проект:
+---Почнемо з OnlineShopProject.Core (BLL(Buisnts Logic Layer)):
+---Додаємо папку Models, в ній:
+
+---Client.cs -->
+namespace OnlineShopProject.Core.Models;
+
+public class Client
+{
+    public int Id { get; set; }  //для збереження в Базі Даних
+    public string FirstName { get; set; } //ім'я
+    public string LastName { get; set; } //прізвище нашого клента
+    public DateTime DateOfBirth { get; set; } //дату народження
+
+    public ICollection<Order> Orders { get; set; } //збереження покупок через кошик
+}
+
+---Product.cs -->
+namespace OnlineShopProject.Core.Models;
+
+public class Product
+{
+    public int Id { get; set; } //id
+    public string Name { get; set; } //назва
+    public decimal Price { get; set; } //ціна
+    public string Description { get; set; } //опис продукту
+
+    public ProductStorageInfo ProductStorageInfo { get; set; }
+}
+
+---ProductStorageInfo.cs -->
+using System.ComponentModel.DataAnnotations;
+
+namespace OnlineShopProject.Core.Models;
+
+public class ProductStorageInfo
+{
+    public int Id { get; set; }
+    
+    [Range(0, int.MaxValue)] //мінімум 0 на складі
+    public int Count { get; set; } //скільки в нас таких продуктів на складі
+}
+
+---Order.cs -->
+namespace OnlineShopProject.Core.Models;
+
+public class Order
+{
+    public int Id { get; set; } //id замовлення
+    public Client Client { get; set; } //клієнта
+    public ICollection<Product> Products { get; set; } //колекцію продуктів
+}
+
+
+---Тепер тут додаємо ще одну папку Interfaces:
+---Це будуть інтерфейси для наших сервісів, які будуть працювати з нашими продуктами.
+---в ній:
+
+---IProductService.cs -->
+using OnlineShopProject.Core.Models;
+
+namespace OnlineShopProject.Core.Interfaces;
+
+public interface IProductService
+{
+    IEnumerable<Product> GetProducts(string? filter, int skip, int take); //метод отримання продуктів
+    Product GetProductById(int id); //отримати продукт по його id
+
+    Product AddProduct(Product product); //добавити продукт
+    Product UpdateProduct(Product product); //оновлення продукту
+    void DeleteProduct(int id); //видалення продукту
+}
+
+---IRepository.cs -->
+namespace OnlineShopProject.Core.Interfaces;
+
+public interface IRepository //інтерфейс для роботи з нашою Базою Даних, потрібен для того щоб адаптувати під нього будь який свій клас
+{
+    IQueryable<T> GetAll<T>() where T : class; //для зберігання даних у вигляді скрипта, щоб не тримати все в оперативній пам'яті
+
+    T Add<T>(T item) where T : class; //добавити елемент до бази даних (за дженерік методом <T>)
+    T Update<T>(T item) where T : class; //оновлення
+    void Delete<T>(T item) where T : class; //видалення
+    void SaveChanges(); //для зберігання змін
+}
+
+
+---Тепер тут створюємо ще одну папку Services, 
+---де будуть вже конкретні реалізації, в ній:
+
+---ProductService.cs -->
+using Microsoft.EntityFrameworkCore;
+using OnlineShopProject.Core.Interfaces;
+using OnlineShopProject.Core.Models;
+
+namespace OnlineShopProject.Core.Services;
+
+public class ProductService : IProductService //імплементує наш інтерфейс IProductService (класи та інтерфейси потрібні для Депенденс Інжекшен)
+{
+    private readonly IRepository _repository; //тепер нам потрібен GenericRepository.cs, але бізнес логіка(OnlineShopProject.Core) не має ссилки на OnlineShopProject.Storage, 
+			//але вона знає про інтерфейс(IRepository.cs), таким чином ми можемо використовувати будь який репозиторій, при налаштуванні через ДепенденсІнжекшен
+    public ProductService(IRepository repository)
+    {
+        _repository = repository; //викликаємо(реалізуємо) його через конструктор
+    }
+
+    public IEnumerable<Product> GetProducts(string? filter, int skip, int take)  //string? - ? означає що наш фільтр може бути пустим
+    {
+        var productsQuery = _repository.GetAll<Product>() //нам потрібен наш репозиторій і з нього отримуємо всі продукти (запитами)
+            .Include(p => p.ProductStorageInfo) //таким чином ми можемо з'єднати наші дві таблички
+            .AsQueryable();
+
+        if (filter != null)
+        {			//відфільтруємо наші дані через метод where:
+            productsQuery = productsQuery.Where(p => p.Name.Contains(filter) || p.Description.Contains(filter)); //якщо у нашого продукта ім'я містить те що написано у нашому фільтрі
+            												//або якщо в продукта опис теж містить ось цей фільтр(слово яке ми передамо)
+        }
+        
+        return productsQuery.OrderBy(p => p.Name) //робимо пагінацію на вивід даних
+            .Skip(skip) //пропустити
+            .Take(take) //взяти
+            .ToArray(); //зведемо всі дані до масиву
+    }
+
+    public Product GetProductById(int id) //отримання продукта по id
+    {
+        return _repository.GetAll<Product>() //звертаємось до нашого репозиторія і отримуємо перший рподук за нашою умовою
+            .FirstOrDefault(p => p.Id == id);
+    }
+
+    public Product AddProduct(Product product)
+    {
+        ValidateProduct(product); //робимо валідацію(Alt+Enter -> Create method)
+        
+        var productFromDb = _repository.Add(product); //звертаємось до нашого репозиторія та додаємо продукт
+        _repository.SaveChanges(); //зберігаємо зміни
+
+        return productFromDb; //повертаємо наш продукт
+    }
+
+    public Product UpdateProduct(Product product)
+    {
+        ValidateProduct(product);
+        
+        var productFromDb = _repository.Update(product); 
+        _repository.SaveChanges();
+
+        return productFromDb;
+    }
+
+    public void DeleteProduct(int id)
+    {
+        var product = GetProductById(id); //отримуємо продукт через метод, і туди передаємо наш продукт
+        _repository.Delete(product);
+        _repository.SaveChanges();
+    }
+    
+    private void ValidateProduct(Product product) //валідація та помилки, робиться в самому низу
+    {
+        if (string.IsNullOrEmpty(product.Name)) //чи наш продукт валідний, якщо щось не так ми викидуємо помилки
+        {
+            throw new ArgumentException("Name should not be empty", nameof(product.Name));
+        }
+        if (string.IsNullOrEmpty(product.Description))
+        {
+            throw new ArgumentException("Description should not be empty", nameof(product.Description));
+        }
+        if (product.Price < 0)
+        {
+            throw new ArgumentException("Price should not be less than o", nameof(product.Price));
+        }
+        if (product.ProductStorageInfo.Count < 0)
+        {
+            throw new ArgumentException("Count should not be less than o", nameof(product.ProductStorageInfo.Count));
+        }
+    }
+}
+
+
+---Тепер переходимо до наповнення OnlineShopProject.Storage:
+---Тут буде вже робота з базою даних, переходимо до реалізації, створюємо:
+
+---OnlineShopContext.cs -->
+using Microsoft.EntityFrameworkCore;
+using OnlineShopProject.Core.Models;
+
+namespace OnlineShopProject.Storage;
+
+public class OnlineShopContext : DbContext //наслідування від класу DbContext (конфігурація нашої Бази Даних)
+{
+    public OnlineShopContext(DbContextOptions<OnlineShopContext> options) : base(options) //конструктор для підключення до Бази Даних
+    {
+    }
+
+    //--- це так потрібно для створення міграції:
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ShopOnlineDB;Integrated Security=True;");
+    }
+    //---
+
+	//передаємо класи, щоб при запуску створилися такі таблиці
+    public DbSet<Client> Clients { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Order> Orders { get; set; }
+    public DbSet<ProductStorageInfo> ProductStorageInfos { get; set; }
+}
+
+
+---Тепер створемо репозиторій для роботи з цим:
+---Додаємо папку Repositories:
+---В ній:
+
+---GenericRepository.cs -->
+using OnlineShopProject.Core.Interfaces;
+
+namespace OnlineShopProject.Storage.Repositories;
+						//він буде працювати з будь-якими таблицями
+public class GenericRepository : IRepository //дуже важливо його наслідувати його від інтерфейсу IRepository який лежить у нашому OnlineShopProject.Core
+{
+    private readonly OnlineShopContext _context; //це робимо для того щоб це все робити через ДепенденсІнжекшен і в одному місці мати ці всі налаштування
+
+    public GenericRepository(OnlineShopContext context) //проініціалізуємо через конструктор
+    {
+        _context = context;
+    }
+							//маємо методи для роботи з нашою Базою Даних:
+    public IQueryable<T> GetAll<T>() where T : class //отримати усіх, з параметром <Т>, тобто ми наперед не знаємо що нам потрібно повертати
+    {
+        return _context.Set<T>(); //на основі типу даних Set сам розуміє яку таблицю нам потрібно передати, він має бути обов'язково референс типом
+    }				  //воно накладається таким чином (where T : class), його треба зробити і для нашого IRepository.cs
+				  //це дає обмеження для нашого тиму <T>, щоб можно передати тільки конкретно референс тип(тобто класи)
+    public T Add<T>(T item) where T : class
+    {
+        var entity = _context.Add(item); //потрібно дістати entity який ми в базі даних додали
+
+        return entity.Entity; //він буде не змінений доки не викличемо SaveChanges()
+    }
+
+    public T Update<T>(T item) where T : class
+    {
+        var entity = _context.Update(item); //викликаємо для нашого елемента(entity) готовий метод Update()
+
+        return entity.Entity; //повернути його
+    }
+
+    public void Delete<T>(T item) where T : class //по типу воно саме зрозуміє, що треба видаляти
+    {
+        _context.Remove(item); //видаляємо об'єкт який є в середині нашої таблиці
+    }
+
+    public void SaveChanges()
+    {
+        _context.SaveChanges(); //збереження змін у Базі Даних(працює як транзакція)
+    }
+} 	//тепер це все будемо використовувати в нашому сервісі(ProductService.cs)
+
+
+---Сервіс розробили, роботу з нашою Базою Даних теж, тепер лешається попрацювати з нашою APIшкою:
+---Щоб не було зациклення у файлі json при перетворенні продуктів, використовуюсть DTO(Data Transfer Objects) об'єкти для передачи даних, це такі спеціальні класи, які повертають тільки ту інформацію яка потрібна,
+---щоб не було зациклень, та не було лишньої інформації яка користувачу не потрібна. (зациклення це коли наприклад, у класі Product.cs є public ProductStorageInfo ProductStorageInfo { get; set; },
+---у якому наприклад всередині теж є public Product Product {get; set;} --- це для приклада зациклення). Ось тому використовують DTO об'єкти.
+---Тому створимо папку в OnlineShopProject.API --> з назвою DTOs та додамо класи:
+
+---CreateProductDTO.cs -->
+namespace OnlineShopProject.API.DTOs;
+
+public class CreateProductDTO
+{
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+    public string Description { get; set; }
+    public int Count { get; set; }
+}
+
+---ProductDTO.cs -->
+namespace OnlineShopProject.API.DTOs;
+
+public class ProductDTO : CreateProductDTO
+{
+    public int Id { get; set; }
+}
+
+
+--- Тепер, у OnlineShopProject.API, у папці Controllers створемо:
+
+---ProductController.cs -->
+using Microsoft.AspNetCore.Mvc;
+using OnlineShopProject.API.DTOs;
+using OnlineShopProject.Core.Interfaces;
+using OnlineShopProject.Core.Models;
+ 
+namespace OnlineShopProject.API.Controllers;
+ 
+[ApiController] //додаємо атрибут
+[Route("api/v1/products")] //додаємо атрибут, щоб було зрозуміло що це(вказуєм шлях)(v1-версія APIшки)
+public class ProductController : ControllerBase //наслідуємо від ControllerBase, і нам потрібен тепер сервіс з яким ми раніше працювали
+{
+    private readonly IProductService _productService; //в нас все має бути через абстракцію, тому ми звертаємось до інтерфейсу IProductService
+ 
+    public ProductController(IProductService productService)
+    {
+        _productService = productService; //створюєм конструктор, для того щоб підключити ДепенденсІнжекшен
+    }
+ 
+
+    [HttpGet]			//тому що повертати нам потрібно ProductDTO
+    public ActionResult<IEnumerable<ProductDTO>> GetProducts([FromQuery]string? filter, [FromQuery]int skip, [FromQuery]int take)
+    {
+        var products = _productService.GetProducts(filter, skip, take)
+            .Select(p => new ProductDTO() //робимо селект з допомогою якого ми зможемо зробити перетворення через DTO
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Price = p.Price,
+                Description = p.Description,
+                Count = p.ProductStorageInfo.Count
+            });
+ 
+        return Ok(products);
+    }
+ 
+    [HttpPost]
+    public ActionResult<ProductDTO> AddProduct([FromBody] CreateProductDTO createProductDTO)
+    {
+        try
+        {
+            var product = new Product()
+            {
+                Name = createProductDTO.Name,
+                Price = createProductDTO.Price,
+                Description = createProductDTO.Description,
+                ProductStorageInfo = new ProductStorageInfo()
+                {
+                    Count = createProductDTO.Count
+                }
+            };
+            var productFromDb = _productService.AddProduct(product);
+ 
+            var productDTO = new ProductDTO()
+            {
+                Id = productFromDb.Id,
+                Name = productFromDb.Name,
+                Price = productFromDb.Price,
+                Description = productFromDb.Description,
+                Count = productFromDb.ProductStorageInfo.Count
+            };
+            return Created($"api/v1/products/{productFromDb.Id}", productDTO); // 201
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+ 
+	[HttpGet("{id}")]
+	public ActionResult<ProductDTO> GetProductById(int id)
+	{
+		var product = _productService.GetProductById(id);
+		if (product == null)
+			return NotFound($"Product with ID {id} not found.");
+ 
+		var productDTO = new ProductDTO
+		{
+			Id = product.Id,
+			Name = product.Name,
+			Price = product.Price,
+			Description = product.Description,
+			Count = product.ProductStorageInfo.Count
+		};
+ 
+		return Ok(productDTO);
+	}
+
+    [HttpPut("{id}")]
+    public ActionResult<ProductDTO> UpdateProduct(int id, [FromBody] CreateProductDTO updateProductDTO)
+    {
+        try
+        {
+            var existingProduct = _productService.GetProductById(id);
+            if (existingProduct == null)
+            {
+                return NotFound($"Product with id {id} not found.");
+            }
+
+            existingProduct.Name = updateProductDTO.Name;
+            existingProduct.Price = updateProductDTO.Price;
+            existingProduct.Description = updateProductDTO.Description;
+            existingProduct.ProductStorageInfo.Count = updateProductDTO.Count;
+
+            var updatedProduct = _productService.UpdateProduct(existingProduct);
+
+            var productDTO = new ProductDTO()
+            {
+                Id = updatedProduct.Id,
+                Name = updatedProduct.Name,
+                Price = updatedProduct.Price,
+                Description = updatedProduct.Description,
+                Count = updatedProduct.ProductStorageInfo.Count
+            };
+
+            return Ok(productDTO);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete("{id}")]
+	public IActionResult DeleteProduct(int id)
+	{
+		try
+		{
+			_productService.DeleteProduct(id);
+			return NoContent();
+		}
+		catch (KeyNotFoundException ex)
+		{
+			return NotFound(ex.Message);
+		}
+	}
+}
+
+
+---Тепер у Program.cs все треба налаштувати:
+
+---Program.cs -->
+using Microsoft.EntityFrameworkCore;
+using OnlineShopProject.Core.Interfaces;
+using OnlineShopProject.Core.Services;
+using OnlineShopProject.Storage;
+using OnlineShopProject.Storage.Repositories;
+
+var builder = WebApplication.CreateBuilder(args);
+//тут будемо робити як раз таки ДепенденсиІнжекшени, спершу нам потрібно проініціалізувати через метод наш DbContext
+//ініціалізуємо наш OnlineShopContext та передаємо опшенси(opt), які приймає наш конструктор і скажемо opt.UseSqlServer,
+//для того, що нам потрібно використовувати наш власний SQL Server, та передамо ссилку, щоб під'єднатися до нашої Бази Даних
+builder.Services.AddDbContext<OnlineShopContext>(
+    opt => opt.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ShopOnlineDB;Integrated Security=True;"));
+			
+builder.Services.AddScoped<IRepository, GenericRepository>(); //підв'язуємо репозиторій, та всюди де видно наш IRepository, використовуй GenericRepository
+builder.Services.AddScoped<IProductService, ProductService>(); //далі сервіси
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
+
+
+---Останнім етапом, потрібно сгенерувати нашу Базу Даних, це будемо робити через міграції, дуже часто Базу Даних потрібно часто змінювати, тому і робимо міграцію,
+---якщо наприклад потрібно відкатитися назад. Першу міграцію зачасту називають Init.
+---Заходимо до View(Вид) -> Other Windows(Другие окна) -> Package Manager Console(Консоль диспетчера пакетов) -> тут обираємо наш проект(Default project: .... .Storage)
+---та пишемо: Add-Migration Init , де (Init) це назва міграції. А якщо потрібно оновити: Update-Database.
+
+---Для того, щоб перевірити чи в нас є доступ до такої бази даних (Server=(localdb)\\MSSQLLocalDB;), потрібно в Visual Studio 2022 зверху натиснути View(Вид) -> 
+---Обозреватель объектов SQL Server(Ctrl+\, Ctrl+S), розкрити SQL Server, і тут має бути така назва( (localdb)\\MSSQLLocalDB...... ), якщо вона різниться, то треба написати таку.
+
+---Після міграції(або після її змін), запускаємо наш проект.
