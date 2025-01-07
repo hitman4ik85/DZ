@@ -1,0 +1,855 @@
+---Створимо проект на Web_API під назвою OnlineShopping.
+
+---Щоб далі працювати нам потрібно скачати декілька NuGet пакетів, правою кнопкою миші на (Решение "OnlineShopping") --> Управление пакетами NuGet --> 
+---Microsoft.EntityFrameworkCore (version 8.0.11)
+---Microsoft.EntityFrameworkCore.SqlServer (version 8.0.11)
+---Microsoft.EntityFrameworkCore.Tools (version 8.0.11)
+---Microsoft.EntityFrameworkCore.Design (version 8.0.11)
+
+---Всередині створюємо папку Models:
+---В ній:
+
+---Order.cs -->
+namespace OnlineShopping.Models;
+
+public class Order
+{
+    public int Id { get; set; }
+    public User User { get; set; }
+    public Product Product { get; set; }
+
+    public double PriceForDelivery { get; set; } //Ціна за замовлення
+    public double TotalPrice => PriceForDelivery + Product.Price;
+
+    public string Address { get; set; }
+
+    public DateTime CreatedAt { get; set; }
+}
+
+---Product.cs -->
+using System.ComponentModel.DataAnnotations;
+
+namespace OnlineShopping.Models;
+
+public class Product
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Count { get; set; }
+
+    public double OriginalPrice { get; set; }
+
+    [Range(0.0, 1.0)]
+    public double Discount { get; set; }
+
+    public double Price => OriginalPrice * Discount;
+
+    public ICollection<Order> Orders { get; set; } //Якщо декілька продуктів
+
+    public DateTime CreatedAt { get; set; }
+    public DateTime ModifiedAt { get; set; }
+    public DateTime? DeletedAt { get; set; } // soft delete
+}
+
+---User.cs -->
+namespace OnlineShopping.Models;
+
+public class User
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
+    public DateTime DateOfBirth { get; set; }
+    public string Email { get; set; }
+    public string? Phone { get; set; }
+
+    public ICollection<Order> Orders { get; set; } //може мати декілька замовлень
+
+    public DateTime CreatedAt { get; set; } //Дата та час, коли користувача було створено
+    public DateTime ModifiedAt { get; set; } //Дата та час, коли змінювали користувача
+    public DateTime? DeletedAt { get; set; } //Дата та час, для випадкового видалення, та змоги повернення,(видимість видалення - soft delete)
+}
+
+---Та в проекті ще створимо папку DTOs:
+---В якій ще папку Inputs:
+---В ній:
+
+---CreateUserDTO.cs -->
+namespace OnlineShopping.DTOs.Inputs;
+
+public class CreateUserDTO
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
+    public DateTime DateOfBirth { get; set; }
+    public string Email { get; set; }
+    public string? Phone { get; set; }
+}
+
+---AddProductDTO.cs -->
+namespace OnlineShopping.DTOs.Inputs;
+
+public class AddProductDTO
+{
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Count { get; set; }
+    public double OriginalPrice { get; set; }
+    public double Discount { get; set; }
+}
+
+---Та папку Outputs:
+---В ній:
+
+---UserDTO.cs -->
+namespace OnlineShopping.DTOs.Outputs;
+
+public class UserDTO
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
+    public DateTime DateOfBirth { get; set; }
+    public string Email { get; set; }
+    public string? Phone { get; set; }
+}
+
+---ProductDTO.cs -->
+namespace OnlineShopping.DTOs.Outputs;
+
+public class ProductDTO
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Count { get; set; }
+    public double OriginalPrice { get; set; }
+    public double Discount { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime ModifiedAt { get; set; }
+    public DateTime? DeletedAt { get; set; }
+}
+
+---Ще у проекті створимо папку Data:
+---В ній:
+
+---DataContext.cs -->
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineShopping.Models;
+
+namespace OnlineShopping.Data;
+
+public class DataContext : DbContext
+{
+    public DataContext(DbContextOptions<DataContext> options) : base(options)
+    {
+    }
+
+    public DbSet<User> Users { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Order> Orders { get; set; }
+}
+
+---У папці Controllers:
+---Створюємо:
+
+---ShopController.cs -->
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using OnlineShopping.Data;
+using OnlineShopping.DTOs.Inputs;
+using OnlineShopping.DTOs.Outputs;
+using OnlineShopping.Models;
+
+namespace OnlineShopping.Controllers;
+
+[ApiController]
+[Route("api/shop")]
+public class ShopController : ControllerBase
+{
+    private readonly DataContext _context;
+
+    public ShopController(DataContext context)
+    {
+        _context = context;
+    }
+
+    [HttpGet("sayHello")]
+    public ActionResult<string> SayHello()
+    {
+        return Ok("Hello world");
+    }
+
+    [HttpGet("users")] // api/shop/users?skip=0&take=10
+    public async Task<ActionResult<IEnumerable<User>>> GetUsersAsync([FromQuery] int skip = 0, [FromQuery] int take = 10)
+    {
+        var users = await _context.Users
+            .Where(u => !u.DeletedAt.HasValue)
+            .Select(u => new UserDTO() // Projection
+            {
+                Id = u.Id,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                DateOfBirth = u.DateOfBirth,
+                Email = u.Email,
+                Phone = u.Phone
+            })
+            .Skip(skip) // Paging
+            .Take(take)
+            .ToArrayAsync(); // async
+
+        // select u.Id, u.FirstName, ...  from Users u;
+
+        return Ok(users); // status 200
+    }
+
+    [HttpPost("users")]
+    public async Task<ActionResult<UserDTO>> AddUser([FromBody] CreateUserDTO createUserDto)
+    {
+        // add validation
+
+        var user = new User()
+        {
+            FirstName = createUserDto.FirstName,
+            LastName = createUserDto.LastName,
+            DateOfBirth = createUserDto.DateOfBirth,
+            Phone = createUserDto.Phone,
+            Email = createUserDto.Email,
+
+            CreatedAt = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow,
+        };
+
+        _context.Users.Add(user);
+        await _context.SaveChangesAsync();
+
+        var userDTO = new UserDTO()
+        {
+            Id = user.Id,
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            DateOfBirth = user.DateOfBirth,
+            Email = user.Email,
+            Phone = user.Phone
+        };
+
+        return Created($"api/shop/users/{user.Id}", userDTO); // status 201
+    }
+
+    [HttpDelete("users/{id}")]
+    public async Task<ActionResult> DeleteUserAsync([FromRoute] int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+        user.DeletedAt = DateTime.UtcNow;
+        await _context.SaveChangesAsync();
+
+        return Ok();
+    }
+
+    [HttpGet("users/search")]
+    public async Task<ActionResult<IEnumerable<UserDTO>>> SearchUsers([FromQuery] string? name = null,
+                                                                      [FromQuery] string? email = null)
+    {
+        var users = _context.Users
+            .Select(u => new UserDTO() // Projection
+            {
+                Id = u.Id,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                DateOfBirth = u.DateOfBirth,
+                Email = u.Email,
+                Phone = u.Phone
+            });
+
+        if (name != null)
+        {
+            users = users.Where(u => (u.LastName + " " + u.FirstName).Contains(name));
+        }
+
+        if (email != null)
+        {
+            users = users.Where(u => u.Email.Contains(email));
+        }
+
+        var usersList = await users.ToArrayAsync();
+        return Ok(usersList);
+    }
+
+
+
+
+
+    [HttpGet("products")]
+    public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductsAsync([FromQuery] int skip = 0, [FromQuery] int take = 10)
+    {
+        var products = await _context.Products
+            .Select(p => new ProductDTO
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Count = p.Count,
+                OriginalPrice = p.OriginalPrice,
+                Discount = p.Discount
+            })
+            .Skip(skip)
+            .Take(take)
+            .ToArrayAsync();
+
+        return Ok(products);
+    }
+
+    [HttpPost("products")]
+    public async Task<ActionResult<ProductDTO>> AddProductAsync([FromBody] AddProductDTO AddProdDto)
+    {
+        var product = new Product
+        {
+            Name = AddProdDto.Name,
+            Description = AddProdDto.Description,
+            Count = AddProdDto.Count,
+            OriginalPrice = AddProdDto.OriginalPrice,
+            Discount = AddProdDto.Discount,
+            CreatedAt = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow,
+            DeletedAt = null
+        };
+
+        _context.Products.Add(product);
+        await _context.SaveChangesAsync();
+
+        var productDTO = new ProductDTO
+        {
+            Id = product.Id,
+            Name = product.Name,
+            Description = product.Description,
+            Count = product.Count,
+            OriginalPrice = product.OriginalPrice,
+            Discount = product.Discount
+        };
+
+        return Created($"api/shop/products/{productDTO.Id}", productDTO);
+    }
+
+    [HttpGet("products/{id}")]
+    public async Task<ActionResult<ProductDTO>> GetProductByIdAsync([FromRoute] int id)
+    {
+        var product = await _context.Products
+            .Select(p => new ProductDTO
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Count = p.Count,
+                OriginalPrice = p.OriginalPrice,
+                Discount = p.Discount
+            })
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (product == null)
+        {
+            return NotFound($"Product with ID {id} not found.");
+        }
+
+        return Ok(product);
+    }
+}
+
+---І останне це:
+
+---Program.cs -->
+using Microsoft.EntityFrameworkCore;
+using OnlineShopping.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+//Підключення до нашої Бази Даних
+builder.Services.AddDbContext<DataContext>(opt =>
+    opt.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ShopOnlineDB1;Integrated Security=True;"));
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
+
+
+
+
+---Останнім етапом, потрібно сгенерувати нашу Базу Даних, це будемо робити через міграції, заходимо до View(Вид) -> 
+-> Other Windows(Другие окна) -> Package Manager Console(Консоль диспетчера пакетов) -> тут обираємо наш проект(Default project: ....)
+---та пишемо: Add-Migration Init , де (Init) це назва міграції. А якщо потрібно оновити: Update-Database
+---Якщо при update бачимо проблему globalization-invariant, то тиснемо лівою кнопкою миші на наш проект на де напис 
+---<InvariantGlobalization>true</InvariantGlobalization>, замінюємо на false.
+---Та Cascade краще замінити на Restrict, щоб не було проблем з каскадними видаленнями.
+
+---Створється папка Migrations:
+---В ній:
+
+---20250106172649_Init.cs -->
+using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace OnlineShopping.Migrations
+{
+    /// <inheritdoc />
+    public partial class Init : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Count = table.Column<int>(type: "int", nullable: false),
+                    OriginalPrice = table.Column<double>(type: "float", nullable: false),
+                    Discount = table.Column<double>(type: "float", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    PriceForDelivery = table.Column<double>(type: "float", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Orders_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Orders_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Orders_ProductId",
+                table: "Orders",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Orders_UserId",
+                table: "Orders",
+                column: "UserId");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Users");
+        }
+    }
+}
+
+20250106172649_Init.Designer.cs -->
+// <auto-generated />
+using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using OnlineShopping.Data;
+
+#nullable disable
+
+namespace OnlineShopping.Migrations
+{
+    [DbContext(typeof(DataContext))]
+    [Migration("20250106172649_Init")]
+    partial class Init
+    {
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        {
+#pragma warning disable 612, 618
+            modelBuilder
+                .HasAnnotation("ProductVersion", "8.0.11")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("OnlineShopping.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("PriceForDelivery")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Discount")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("OriginalPrice")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.Order", b =>
+                {
+                    b.HasOne("OnlineShopping.Models.Product", "Product")
+                        .WithMany("Orders")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineShopping.Models.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.Product", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.User", b =>
+                {
+                    b.Navigation("Orders");
+                });
+#pragma warning restore 612, 618
+        }
+    }
+}
+
+DataContextModelSnapshot.cs -->
+// <auto-generated />
+using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using OnlineShopping.Data;
+
+#nullable disable
+
+namespace OnlineShopping.Migrations
+{
+    [DbContext(typeof(DataContext))]
+    partial class DataContextModelSnapshot : ModelSnapshot
+    {
+        protected override void BuildModel(ModelBuilder modelBuilder)
+        {
+#pragma warning disable 612, 618
+            modelBuilder
+                .HasAnnotation("ProductVersion", "8.0.11")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("OnlineShopping.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("PriceForDelivery")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Discount")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("OriginalPrice")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.Order", b =>
+                {
+                    b.HasOne("OnlineShopping.Models.Product", "Product")
+                        .WithMany("Orders")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("OnlineShopping.Models.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.Product", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("OnlineShopping.Models.User", b =>
+                {
+                    b.Navigation("Orders");
+                });
+#pragma warning restore 612, 618
+        }
+    }
+}

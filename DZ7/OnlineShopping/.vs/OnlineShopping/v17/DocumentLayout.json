@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\dtos\\outputs\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\dtos\\outputs\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\dtos\\inputs\\addproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\dtos\\inputs\\addproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\dtos\\inputs\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\dtos\\inputs\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz7\\onlineshopping\\onlineshopping\\dtos\\outputs\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59EADBD1-590E-4FF8-AEE0-2C8E43B22CB3}|OnlineShopping\\OnlineShopping.csproj|solutionrelative:onlineshopping\\dtos\\outputs\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Outputs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\DTOs\\Outputs\\ProductDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Outputs\\ProductDTO.cs",
+              "RelativeToolTip": "OnlineShopping\\DTOs\\Outputs\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T18:21:50.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddProductDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Inputs\\AddProductDTO.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\DTOs\\Inputs\\AddProductDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Inputs\\AddProductDTO.cs",
+              "RelativeToolTip": "OnlineShopping\\DTOs\\Inputs\\AddProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T18:21:24.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateUserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Inputs\\CreateUserDTO.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\DTOs\\Inputs\\CreateUserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Inputs\\CreateUserDTO.cs",
+              "RelativeToolTip": "OnlineShopping\\DTOs\\Inputs\\CreateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T18:02:52.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Outputs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\DTOs\\Outputs\\UserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\DTOs\\Outputs\\UserDTO.cs",
+              "RelativeToolTip": "OnlineShopping\\DTOs\\Outputs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:53:41.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\Controllers\\ShopController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "OnlineShopping\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAowMsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:16:48.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Program.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Program.cs",
+              "RelativeToolTip": "OnlineShopping\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:06:32.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\Data\\DataContext.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Data\\DataContext.cs",
+              "RelativeToolTip": "OnlineShopping\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:02:33.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Models\\User.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\Models\\User.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Models\\User.cs",
+              "RelativeToolTip": "OnlineShopping\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T16:19:05.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\Models\\Order.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Models\\Order.cs",
+              "RelativeToolTip": "OnlineShopping\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T16:18:45.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "OnlineShopping\\Models\\Product.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ7\\OnlineShopping\\OnlineShopping\\Models\\Product.cs",
+              "RelativeToolTip": "OnlineShopping\\Models\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T16:18:37.012Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
