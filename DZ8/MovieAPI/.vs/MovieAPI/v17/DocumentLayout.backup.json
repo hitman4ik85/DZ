@@ -1,0 +1,253 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\dtos\\inputs\\createauthordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\dtos\\inputs\\createauthordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\dtos\\inputs\\createfilmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\dtos\\inputs\\createfilmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\dtos\\outputs\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\dtos\\outputs\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\dtos\\outputs\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\dtos\\outputs\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\models\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\models\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\services\\filmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\services\\filmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson8webapi\\movieapi\\movieapi\\movieapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B5835EBA-FD32-4C2A-9AE7-B71AF9E596AC}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\movieapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateAuthorDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Inputs\\CreateAuthorDTO.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\DTOs\\Inputs\\CreateAuthorDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Inputs\\CreateAuthorDTO.cs",
+              "RelativeToolTip": "MovieAPI\\DTOs\\Inputs\\CreateAuthorDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T20:05:07.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Services\\AuthorService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Services\\AuthorService.cs",
+              "RelativeToolTip": "MovieAPI\\Services\\AuthorService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T20:04:17.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Controllers\\AuthorController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "MovieAPI\\Controllers\\AuthorController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAswC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T20:03:54.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FilmService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Services\\FilmService.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Services\\FilmService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Services\\FilmService.cs",
+              "RelativeToolTip": "MovieAPI\\Services\\FilmService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:59:00.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Program.cs",
+              "RelativeToolTip": "MovieAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:47:30.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MovieAPI.csproj",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\MovieAPI.csproj",
+              "RelativeDocumentMoniker": "MovieAPI\\MovieAPI.csproj",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\MovieAPI.csproj",
+              "RelativeToolTip": "MovieAPI\\MovieAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-11T18:46:56.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilmController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Controllers\\FilmController.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Controllers\\FilmController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Controllers\\FilmController.cs",
+              "RelativeToolTip": "MovieAPI\\Controllers\\FilmController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:47:17.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\MappingProfile.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\MappingProfile.cs",
+              "RelativeToolTip": "MovieAPI\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:47:03.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Data\\DataContext.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Data\\DataContext.cs",
+              "RelativeToolTip": "MovieAPI\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:46:48.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthorDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Outputs\\AuthorDTO.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\DTOs\\Outputs\\AuthorDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Outputs\\AuthorDTO.cs",
+              "RelativeToolTip": "MovieAPI\\DTOs\\Outputs\\AuthorDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:46:27.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FilmDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Outputs\\FilmDTO.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\DTOs\\Outputs\\FilmDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Outputs\\FilmDTO.cs",
+              "RelativeToolTip": "MovieAPI\\DTOs\\Outputs\\FilmDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:46:12.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateFilmDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Inputs\\CreateFilmDTO.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\DTOs\\Inputs\\CreateFilmDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\DTOs\\Inputs\\CreateFilmDTO.cs",
+              "RelativeToolTip": "MovieAPI\\DTOs\\Inputs\\CreateFilmDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:45:55.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Models\\Author.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Models\\Author.cs",
+              "RelativeToolTip": "MovieAPI\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:44:34.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Film.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Models\\Film.cs",
+              "RelativeDocumentMoniker": "MovieAPI\\Models\\Film.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson8WebApi\\MovieAPI\\MovieAPI\\Models\\Film.cs",
+              "RelativeToolTip": "MovieAPI\\Models\\Film.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:44:17.783Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
