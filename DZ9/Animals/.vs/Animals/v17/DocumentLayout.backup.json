@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\middlewares\\animalmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\middlewares\\animalmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\middlewares\\authcheckmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\middlewares\\authcheckmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\middlewares\\cachemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\middlewares\\cachemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\middlewares\\requestresponseinfomiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\middlewares\\requestresponseinfomiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\services\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\services\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\interfaces\\ianimalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\interfaces\\ianimalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\animals.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\animals.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz9\\animals\\animals.api\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE194965-09E0-4D29-AD2C-974DFD2859D9}|Animals.API\\Animals.API.csproj|solutionrelative:animals.api\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CacheMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\CacheMiddleware.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Middlewares\\CacheMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\CacheMiddleware.cs",
+              "RelativeToolTip": "Animals.API\\Middlewares\\CacheMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T15:05:17.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthCheckMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\AuthCheckMiddleware.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Middlewares\\AuthCheckMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\AuthCheckMiddleware.cs",
+              "RelativeToolTip": "Animals.API\\Middlewares\\AuthCheckMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:35:15.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestResponseInfoMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\RequestResponseInfoMiddleware.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Middlewares\\RequestResponseInfoMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\RequestResponseInfoMiddleware.cs",
+              "RelativeToolTip": "Animals.API\\Middlewares\\RequestResponseInfoMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:24:25.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimalMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\AnimalMiddleware.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Middlewares\\AnimalMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\AnimalMiddleware.cs",
+              "RelativeToolTip": "Animals.API\\Middlewares\\AnimalMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:58:02.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "Animals.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:42:41.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Program.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Program.cs",
+              "RelativeToolTip": "Animals.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T16:32:45.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnimalsController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Controllers\\AnimalsController.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Controllers\\AnimalsController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Controllers\\AnimalsController.cs",
+              "RelativeToolTip": "Animals.API\\Controllers\\AnimalsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T16:33:35.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnimalService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Services\\AnimalService.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Services\\AnimalService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Services\\AnimalService.cs",
+              "RelativeToolTip": "Animals.API\\Services\\AnimalService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T16:20:24.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAnimalService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Interfaces\\IAnimalService.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Interfaces\\IAnimalService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Interfaces\\IAnimalService.cs",
+              "RelativeToolTip": "Animals.API\\Interfaces\\IAnimalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T16:17:50.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Animals.API.csproj",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Animals.API.csproj",
+              "RelativeDocumentMoniker": "Animals.API\\Animals.API.csproj",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Animals.API.csproj",
+              "RelativeToolTip": "Animals.API\\Animals.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-13T16:16:50.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Models\\Animal.cs",
+              "RelativeDocumentMoniker": "Animals.API\\Models\\Animal.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ9\\Animals\\Animals.API\\Models\\Animal.cs",
+              "RelativeToolTip": "Animals.API\\Models\\Animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T16:13:16.308Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
