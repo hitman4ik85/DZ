@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Animals.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/animals/test1": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/animals/test2": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/animals/test3": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/animals/test4": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/animals/test5": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/animals/test6": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

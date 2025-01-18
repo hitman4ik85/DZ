@@ -1,0 +1,62 @@
+[
+  {
+    "ContainingType": "Animals.API.Controllers.AnimalsController",
+    "Method": "TestEndpoint",
+    "RelativePath": "api/animals/test1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Animals.API.Controllers.AnimalsController",
+    "Method": "TestEndpoint2",
+    "RelativePath": "api/animals/test2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Animals.API.Controllers.AnimalsController",
+    "Method": "TestEndpoint3",
+    "RelativePath": "api/animals/test3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Animals.API.Controllers.AnimalsController",
+    "Method": "TestEndpoint4",
+    "RelativePath": "api/animals/test4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Animals.API.Controllers.AnimalsController",
+    "Method": "TestEndpoint5",
+    "RelativePath": "api/animals/test5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Animals.API.Controllers.AnimalsController",
+    "Method": "TestEndpoint6",
+    "RelativePath": "api/animals/test6",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
