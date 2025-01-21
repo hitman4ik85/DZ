@@ -1,0 +1,11 @@
+Завдання
+
+На основі вибраної теми з попереднього завдання додати методи до сервісу та ендпоінти у контролер.
+Якщо вас не було на попередньому завданні: оберіть тему з повідомлення за попереднє заняття, перегляньте запис, створіть проект як на занятті по вашій вибраній темі.
+
+Завдання по темах:
+
+3. Product Catalog API:
+1) PUT `/api/products/{id}` - Update product information.
+2) DELETE `/api/products/{id}` - Delete a specific product.
+3) DELETE `/api/products` - Bulk delete all products.

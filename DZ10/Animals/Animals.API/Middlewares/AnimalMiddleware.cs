@@ -12,10 +12,11 @@ public class AnimalMiddleware : IMiddleware
         {
             var body = await context.Request.BodyReader.ReadAsync(); //читаемо тіло реквеста
             string bodyText = Encoding.UTF8.GetString(body.Buffer);
-            if (bodyText.Contains("\"Id\""))
+            if (bodyText.Contains("\"id\""))
             {
                 context.Response.StatusCode = 400; //міняємо статус
                 await context.Response.BodyWriter.WriteAsync("You cannot add ID"u8.ToArray());
+		return;
             }
         }
         await next.Invoke(context); //next middleware
