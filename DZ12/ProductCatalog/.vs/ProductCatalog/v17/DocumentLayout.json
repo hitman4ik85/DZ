@@ -1,0 +1,222 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.core\\dtos\\addproductrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|solutionrelative:productcatalog.core\\dtos\\addproductrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.core\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|solutionrelative:productcatalog.core\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9E5766-B405-453E-8DB1-130947074D9E}|ProductCatalog.Entities\\ProductCatalog.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.entities\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9E5766-B405-453E-8DB1-130947074D9E}|ProductCatalog.Entities\\ProductCatalog.Entities.csproj|solutionrelative:productcatalog.entities\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D680AD6-EFDC-4BAA-99C6-E26B4B4A9A3C}|ProductCatalog.Storage\\ProductCatalog.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.storage\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D680AD6-EFDC-4BAA-99C6-E26B4B4A9A3C}|ProductCatalog.Storage\\ProductCatalog.Storage.csproj|solutionrelative:productcatalog.storage\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog\\middlewares\\pagevalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\middlewares\\pagevalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE1E493-BF41-4D19-9803-82EFB512ECF6}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.core\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|solutionrelative:productcatalog.core\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C3A51-3AAD-4021-AA34-18C37B903E49}|ProductCatalog.Core\\ProductCatalog.Core.csproj|solutionrelative:productcatalog.core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9E5766-B405-453E-8DB1-130947074D9E}|ProductCatalog.Entities\\ProductCatalog.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz12\\productcatalog\\productcatalog.entities\\productcatalog.entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5E9E5766-B405-453E-8DB1-130947074D9E}|ProductCatalog.Entities\\ProductCatalog.Entities.csproj|solutionrelative:productcatalog.entities\\productcatalog.entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PageValidationMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Middlewares\\PageValidationMiddleware.cs",
+              "RelativeDocumentMoniker": "ProductCatalog\\Middlewares\\PageValidationMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Middlewares\\PageValidationMiddleware.cs",
+              "RelativeToolTip": "ProductCatalog\\Middlewares\\PageValidationMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T15:51:00.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "ProductCatalog\\Mapping\\MappingProfile.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "ProductCatalog\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T15:46:44.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExceptionFilter.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Filters\\ExceptionFilter.cs",
+              "RelativeDocumentMoniker": "ProductCatalog\\Filters\\ExceptionFilter.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Filters\\ExceptionFilter.cs",
+              "RelativeToolTip": "ProductCatalog\\Filters\\ExceptionFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:36:38.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Program.cs",
+              "RelativeDocumentMoniker": "ProductCatalog\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Program.cs",
+              "RelativeToolTip": "ProductCatalog\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:22:06.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductCatalog\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductCatalog\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:20:13.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddProductRequestDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\DTOs\\AddProductRequestDTO.cs",
+              "RelativeDocumentMoniker": "ProductCatalog.Core\\DTOs\\AddProductRequestDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\DTOs\\AddProductRequestDTO.cs",
+              "RelativeToolTip": "ProductCatalog.Core\\DTOs\\AddProductRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:16:23.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "ProductCatalog.Core\\DTOs\\ProductDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "ProductCatalog.Core\\DTOs\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:16:04.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductCatalog.Core\\Services\\ProductService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\Services\\ProductService.cs",
+              "RelativeToolTip": "ProductCatalog.Core\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:14:58.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "ProductCatalog.Core\\Interface\\IProductService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Core\\Interface\\IProductService.cs",
+              "RelativeToolTip": "ProductCatalog.Core\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:14:22.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductContext.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Storage\\ProductContext.cs",
+              "RelativeDocumentMoniker": "ProductCatalog.Storage\\ProductContext.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Storage\\ProductContext.cs",
+              "RelativeToolTip": "ProductCatalog.Storage\\ProductContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T17:03:38.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Entities\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductCatalog.Entities\\Models\\Product.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Entities\\Models\\Product.cs",
+              "RelativeToolTip": "ProductCatalog.Entities\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:49:18.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductCatalog.Entities.csproj",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Entities\\ProductCatalog.Entities.csproj",
+              "RelativeDocumentMoniker": "ProductCatalog.Entities\\ProductCatalog.Entities.csproj",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ12\\ProductCatalog\\ProductCatalog.Entities\\ProductCatalog.Entities.csproj",
+              "RelativeToolTip": "ProductCatalog.Entities\\ProductCatalog.Entities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-20T16:48:42Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
