@@ -10,17 +10,35 @@ public static class UserEndpoints
     {
         var endpoint = app.MapGroup("api/users/");
 
-        endpoint.MapGet("/", (FoodOrderContext context) =>
+        // Отримати всіх користувачів + пагінація
+        endpoint.MapGet("/", (int page, int pageSize, FoodOrderContext context) =>
         {
-            return Results.Ok(context.Users.ToList());
+            var users = context.Users
+                .Skip(page * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return Results.Ok(users);
         });
 
+        // Отримати користувача за ID
         endpoint.MapGet("{id}", ([FromRoute] int id, FoodOrderContext context) =>
         {
             var user = context.Users.Find(id);
             return user != null ? Results.Ok(user) : Results.NotFound();
         });
 
+        // Пошук користувачів за ім'ям або email
+        endpoint.MapGet("search", ([FromQuery] string query, FoodOrderContext context) =>
+        {
+            var users = context.Users
+                .Where(u => u.Name.Contains(query) || u.Email.Contains(query))
+                .ToList();
+
+            return Results.Ok(users);
+        });
+
+        // Додати користувача
         endpoint.MapPost("/", async ([FromBody] User user, FoodOrderContext context) =>
         {
             context.Users.Add(user);
@@ -28,6 +46,7 @@ public static class UserEndpoints
             return Results.Created("", user);
         });
 
+        // Оновити користувача
         endpoint.MapPut("/", (User user, FoodOrderContext context) =>
         {
             var oldUser = context.Users.Find(user.Id);
@@ -42,6 +61,7 @@ public static class UserEndpoints
             return Results.NotFound();
         });
 
+        // Видалити користувача
         endpoint.MapDelete("{id}", (int id, FoodOrderContext context) =>
         {
             var user = context.Users.Find(id);

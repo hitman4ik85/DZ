@@ -10,17 +10,35 @@ public static class ProductEndpoints
     {
         var endpoint = app.MapGroup("api/products/");
 
-        endpoint.MapGet("/", (FoodOrderContext context) =>
+        // Отримати всі продукти + пагінація
+        endpoint.MapGet("/", (int page, int pageSize, FoodOrderContext context) =>
         {
-            return Results.Ok(context.Products.ToList());
+            var products = context.Products
+                .Skip(page * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return Results.Ok(products);
         });
 
+        // Отримати продукт за ID
         endpoint.MapGet("{id}", ([FromRoute] int id, FoodOrderContext context) =>
         {
             var product = context.Products.Find(id);
             return product != null ? Results.Ok(product) : Results.NotFound();
         });
 
+        // Пошук продуктів за назвою або описом
+        endpoint.MapGet("search", ([FromQuery] string query, FoodOrderContext context) =>
+        {
+            var products = context.Products
+                .Where(p => p.Name.Contains(query) || p.Description.Contains(query))
+                .ToList();
+
+            return Results.Ok(products);
+        });
+
+        // Додати продукт
         endpoint.MapPost("/", async ([FromBody] Product product, FoodOrderContext context) =>
         {
             context.Products.Add(product);
@@ -28,6 +46,7 @@ public static class ProductEndpoints
             return Results.Created("", product);
         });
 
+        // Оновити продукт
         endpoint.MapPut("/", (Product product, FoodOrderContext context) =>
         {
             var oldProduct = context.Products.Find(product.Id);
@@ -42,6 +61,7 @@ public static class ProductEndpoints
             return Results.NotFound();
         });
 
+        // Видалити продукт
         endpoint.MapDelete("{id}", (int id, FoodOrderContext context) =>
         {
             var product = context.Products.Find(id);
