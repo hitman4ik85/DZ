@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "soupIyrn6BwIdc+NKMbKwc0KfyJzZztlJsPWmkN4DoM=",
+  "Source": "CountryCityApi",
+  "BasePath": "_content/CountryCityApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
