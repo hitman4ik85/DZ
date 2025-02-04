@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleBudgetTracker.API", "PeopleBudgetTracker.API\PeopleBudgetTracker.API.csproj", "{5E3400BA-BF98-4B32-9758-6E45890249C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleBudgetTracker.Entities", "PeopleBudgetTracker.Entities\PeopleBudgetTracker.Entities.csproj", "{488B9431-4BAE-4917-8206-03975E902D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleBudgetTracker.Core", "PeopleBudgetTracker.Core\PeopleBudgetTracker.Core.csproj", "{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleBudgetTracker.Storage", "PeopleBudgetTracker.Storage\PeopleBudgetTracker.Storage.csproj", "{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E3400BA-BF98-4B32-9758-6E45890249C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3400BA-BF98-4B32-9758-6E45890249C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3400BA-BF98-4B32-9758-6E45890249C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3400BA-BF98-4B32-9758-6E45890249C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488B9431-4BAE-4917-8206-03975E902D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488B9431-4BAE-4917-8206-03975E902D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488B9431-4BAE-4917-8206-03975E902D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488B9431-4BAE-4917-8206-03975E902D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

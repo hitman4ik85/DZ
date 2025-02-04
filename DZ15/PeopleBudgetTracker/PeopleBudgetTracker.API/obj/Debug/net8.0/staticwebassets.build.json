@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CjC3E939rajALLzwrqAbqL2cIJP2YlV3lO0hDmMJamU=",
+  "Source": "PeopleBudgetTracker.API",
+  "BasePath": "_content/PeopleBudgetTracker.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
