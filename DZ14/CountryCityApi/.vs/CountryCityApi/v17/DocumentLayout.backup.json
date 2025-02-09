@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|solutionrelative:countrycityapi\\endpoints\\cityendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz14\\countrycityapi\\countrycityapi\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|solutionrelative:countrycityapi\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz14\\countrycityapi\\countrycityapi\\data\\countrycitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|solutionrelative:countrycityapi\\data\\countrycitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz14\\countrycityapi\\countrycityapi\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|solutionrelative:countrycityapi\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\dz\\dz14\\countrycityapi\\countrycityapi\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51582FA2-1261-4B1C-AC60-AC1DD195FBFE}|CountryCityApi\\CountryCityApi.csproj|solutionrelative:countrycityapi\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ14\\CountryCityApi\\CountryCityApi\\appsettings.json",
               "RelativeDocumentMoniker": "CountryCityApi\\appsettings.json",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ14\\CountryCityApi\\CountryCityApi\\Program.cs",
               "RelativeDocumentMoniker": "CountryCityApi\\Program.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "City.cs",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ14\\CountryCityApi\\CountryCityApi\\Models\\City.cs",
               "RelativeDocumentMoniker": "CountryCityApi\\Models\\City.cs",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Country.cs",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ14\\CountryCityApi\\CountryCityApi\\Models\\Country.cs",
               "RelativeDocumentMoniker": "CountryCityApi\\Models\\Country.cs",
@@ -94,7 +94,8 @@
               "RelativeToolTip": "CountryCityApi\\Models\\Country.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:40:40.396Z"
+              "WhenOpened": "2025-02-01T16:40:40.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -106,7 +107,8 @@
               "RelativeToolTip": "CountryCityApi\\Endpoints\\CityEndpoints.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:40:28.705Z"
+              "WhenOpened": "2025-02-01T16:40:28.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -116,14 +118,14 @@
               "RelativeDocumentMoniker": "CountryCityApi\\Endpoints\\CountryEndpoints.cs",
               "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ14\\CountryCityApi\\CountryCityApi\\Endpoints\\CountryEndpoints.cs",
               "RelativeToolTip": "CountryCityApi\\Endpoints\\CountryEndpoints.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAQwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-01T16:40:17.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CountryCityContext.cs",
               "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\DZ\\DZ14\\CountryCityApi\\CountryCityApi\\Data\\CountryCityContext.cs",
               "RelativeDocumentMoniker": "CountryCityApi\\Data\\CountryCityContext.cs",
