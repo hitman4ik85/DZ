@@ -1,0 +1,485 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\interface\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\interface\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\dtos\\categorystatisticsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\dtos\\categorystatisticsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.api\\endpoints\\transactionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|solutionrelative:peoplebudgettracker.api\\endpoints\\transactionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|solutionrelative:peoplebudgettracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|solutionrelative:peoplebudgettracker.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.api\\endpoints\\categoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|solutionrelative:peoplebudgettracker.api\\endpoints\\categoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}|PeopleBudgetTracker.Storage\\PeopleBudgetTracker.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.storage\\peoplebudgettrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E316A6F9-A239-4431-82DF-4B85B6BF9FC4}|PeopleBudgetTracker.Storage\\PeopleBudgetTracker.Storage.csproj|solutionrelative:peoplebudgettracker.storage\\peoplebudgettrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\incomeoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\incomeoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\expenseoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\expenseoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\customcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\customcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.entities\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488B9431-4BAE-4917-8206-03975E902D21}|PeopleBudgetTracker.Entities\\PeopleBudgetTracker.Entities.csproj|solutionrelative:peoplebudgettracker.entities\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E3400BA-BF98-4B32-9758-6E45890249C6}|PeopleBudgetTracker.API\\PeopleBudgetTracker.API.csproj|solutionrelative:peoplebudgettracker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson16webapi\\peoplebudgettracker\\peoplebudgettracker.core\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9E5B3B-9DBC-4953-BAAC-1E75F49F22D4}|PeopleBudgetTracker.Core\\PeopleBudgetTracker.Core.csproj|solutionrelative:peoplebudgettracker.core\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryStatisticsDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\CategoryStatisticsDTO.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\DTOs\\CategoryStatisticsDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\CategoryStatisticsDTO.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\DTOs\\CategoryStatisticsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T17:27:11.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryEndpoints.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Endpoints\\CategoryEndpoints.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.API\\Endpoints\\CategoryEndpoints.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Endpoints\\CategoryEndpoints.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.API\\Endpoints\\CategoryEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:26:14.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Services\\CategoryService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Services\\CategoryService.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:24:22.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Interface\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Interface\\ICategoryService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Interface\\ICategoryService.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Interface\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:22:54.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\DTOs\\CategoryDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\CategoryDTO.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\DTOs\\CategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:21:47.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Mapping\\MappingProfile.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T19:18:44.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ITransactionService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Interface\\ITransactionService.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Interface\\ITransactionService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Interface\\ITransactionService.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Interface\\ITransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:44:24.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TransactionDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\TransactionDTO.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\DTOs\\TransactionDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\TransactionDTO.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\DTOs\\TransactionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:43:56.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\AccountDTO.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\DTOs\\AccountDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\AccountDTO.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\DTOs\\AccountDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:43:39.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Services\\TransactionService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Services\\TransactionService.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Services\\TransactionService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwOMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:42:57.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionEndpoints.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Endpoints\\TransactionEndpoints.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.API\\Endpoints\\TransactionEndpoints.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Endpoints\\TransactionEndpoints.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.API\\Endpoints\\TransactionEndpoints.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:42:17.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\appsettings.json",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.API\\appsettings.json",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\appsettings.json",
+              "RelativeToolTip": "PeopleBudgetTracker.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-04T16:28:21.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Helpers\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Helpers\\PasswordHasher.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Helpers\\PasswordHasher.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Helpers\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:25:47.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserEndpoints.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.API\\Endpoints\\UserEndpoints.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.API\\Endpoints\\UserEndpoints.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAywB0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:12:32.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Services\\UserService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Services\\UserService.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Services\\UserService.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwv30AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:11:38.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateUserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\CreateUserDTO.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\DTOs\\CreateUserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\CreateUserDTO.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\DTOs\\CreateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:10:58.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\DTOs\\UserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:10:36.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Core\\Interface\\IUserService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Core\\Interface\\IUserService.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Core\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:09:59.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Program.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.API\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.API\\Program.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.API\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:05:53.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Operation.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\Operation.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\Operation.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\Operation.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\Operation.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:00:44.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ExpenseOperation.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\ExpenseOperation.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\ExpenseOperation.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\ExpenseOperation.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\ExpenseOperation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:00:24.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IncomeOperation.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\IncomeOperation.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\IncomeOperation.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\IncomeOperation.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\IncomeOperation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:00:02.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomCategory.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\CustomCategory.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\CustomCategory.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\CustomCategory.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\CustomCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:59:42.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\Category.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\Category.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:59:09.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\Account.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\Account.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:58:51.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Entities\\Models\\User.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Entities\\Models\\User.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Entities\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:58:26.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PeopleBudgetTrackerContext.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Storage\\PeopleBudgetTrackerContext.cs",
+              "RelativeDocumentMoniker": "PeopleBudgetTracker.Storage\\PeopleBudgetTrackerContext.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson16WebApi\\PeopleBudgetTracker\\PeopleBudgetTracker.Storage\\PeopleBudgetTrackerContext.cs",
+              "RelativeToolTip": "PeopleBudgetTracker.Storage\\PeopleBudgetTrackerContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:42:48.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Завдання
+
+Створіть клас User і клас UserService.
+В класі User мають бути властивості FirstName, LastName, Email, Password.
+В класі UserService мають бути методи bool IsUserValid(User), void AddUser(User), RemoveUserByName(string name). Реалізуйте методи на основі списку List<User>. 
+
+Напишіть реалізацію для методів а також юніт тести щоб перевірити чи методи працюють добре.
+
+1) IsUserValid()
+- повертає false якщо FirstName, LastName, Email, або Password пусті
+- повертає false якщо Email не підлягає формату *@*.* (* - будь які символи)
+- повертає false якщо пароль не містить 8 символів, літер верхнього-нижнього регістру, цифр чи спец знаків (! @ # $ % ^ & *)
+- інакше повертає true
+
+2) AddUser()
+- якщо юзер не валідний - викидує ArgumentException
+
+3) RemoveUserByName()
+- якщо передане ім'я пусте - викидує ArgumentException
+- якщо юзера не знайдено - викидує ArgumentNullException
