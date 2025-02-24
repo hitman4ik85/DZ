@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "lHrb5R7ssIxUyJx5arzIkGnyR6acNh+QwICrrc6WJn8=",
+  "Source": "WorkerManagement.API",
+  "BasePath": "_content/WorkerManagement.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

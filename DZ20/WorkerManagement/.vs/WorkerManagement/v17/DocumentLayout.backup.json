@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\dtos\\workhoursdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\dtos\\workhoursdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\interfaces\\imanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\interfaces\\imanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBC9EE9-50BD-4DF0-99EF-B85B77831970}|WorkerManagement.API\\WorkerManagement.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBC9EE9-50BD-4DF0-99EF-B85B77831970}|WorkerManagement.API\\WorkerManagement.API.csproj|solutionrelative:workermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\dtos\\managerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\dtos\\managerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\dtos\\createmanagerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\dtos\\createmanagerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\dtos\\createemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\dtos\\createemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.core\\services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D644D892-0F81-48C2-A09B-E481342A770D}|WorkerManagement.Core\\WorkerManagement.Core.csproj|solutionrelative:workermanagement.core\\services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.storage\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|solutionrelative:workermanagement.storage\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.storage\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|solutionrelative:workermanagement.storage\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.storage\\data\\workermanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|solutionrelative:workermanagement.storage\\data\\workermanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.entities\\models\\worklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|solutionrelative:workermanagement.entities\\models\\worklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.entities\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|solutionrelative:workermanagement.entities\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.entities\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|solutionrelative:workermanagement.entities\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.entities\\models\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D26FE84-CF8D-42FF-9676-DD9D2EA002D0}|WorkerManagement.Entities\\WorkerManagement.Entities.csproj|solutionrelative:workermanagement.entities\\models\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.storage\\migrations\\workermanagementcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|solutionrelative:workermanagement.storage\\migrations\\workermanagementcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\lesson20webapi\\workermanagement\\workermanagement.storage\\migrations\\20250219165427_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773F0025-B52E-44CB-9F92-D3136BCB156B}|WorkerManagement.Storage\\WorkerManagement.Storage.csproj|solutionrelative:workermanagement.storage\\migrations\\20250219165427_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkHoursDto.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\WorkHoursDto.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\DTOs\\WorkHoursDto.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\WorkHoursDto.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\DTOs\\WorkHoursDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T18:35:21.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateManagerDto.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\CreateManagerDto.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\DTOs\\CreateManagerDto.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\CreateManagerDto.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\DTOs\\CreateManagerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:44:51.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerDto.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\ManagerDto.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\DTOs\\ManagerDto.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\ManagerDto.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\DTOs\\ManagerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:44:30.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateEmployeeDto.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\CreateEmployeeDto.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\DTOs\\CreateEmployeeDto.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\CreateEmployeeDto.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\DTOs\\CreateEmployeeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:43:57.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\DTOs\\EmployeeDto.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\DTOs\\EmployeeDto.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\DTOs\\EmployeeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:43:37.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManagerService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Services\\ManagerService.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\Services\\ManagerService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Services\\ManagerService.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\Services\\ManagerService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:41:14.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswHIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:40:37.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IManagerService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Interfaces\\IManagerService.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\Interfaces\\IManagerService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Interfaces\\IManagerService.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\Interfaces\\IManagerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:39:48.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Core\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "WorkerManagement.Core\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:39:06.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Storage\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Repositories\\Repository.cs",
+              "RelativeToolTip": "WorkerManagement.Storage\\Repositories\\Repository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:35:55.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Storage\\Repositories\\IRepository.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "WorkerManagement.Storage\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:35:18.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WorkerManagementContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Migrations\\WorkerManagementContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Storage\\Migrations\\WorkerManagementContextModelSnapshot.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Migrations\\WorkerManagementContextModelSnapshot.cs",
+              "RelativeToolTip": "WorkerManagement.Storage\\Migrations\\WorkerManagementContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:18:01.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250219165427_Init.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Migrations\\20250219165427_Init.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Storage\\Migrations\\20250219165427_Init.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Migrations\\20250219165427_Init.cs",
+              "RelativeToolTip": "WorkerManagement.Storage\\Migrations\\20250219165427_Init.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:54:28.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.API\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.API\\Program.cs",
+              "RelativeToolTip": "WorkerManagement.API\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:50:12.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WorkerManagementContext.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Data\\WorkerManagementContext.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Storage\\Data\\WorkerManagementContext.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Storage\\Data\\WorkerManagementContext.cs",
+              "RelativeToolTip": "WorkerManagement.Storage\\Data\\WorkerManagementContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:47:15.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Bonus.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\Bonus.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Entities\\Models\\Bonus.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\Bonus.cs",
+              "RelativeToolTip": "WorkerManagement.Entities\\Models\\Bonus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:30:45.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WorkLog.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\WorkLog.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Entities\\Models\\WorkLog.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\WorkLog.cs",
+              "RelativeToolTip": "WorkerManagement.Entities\\Models\\WorkLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:30:34.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Entities\\Models\\Manager.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\Manager.cs",
+              "RelativeToolTip": "WorkerManagement.Entities\\Models\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:30:23.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "WorkerManagement.Entities\\Models\\Employee.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Lesson20WebApi\\WorkerManagement\\WorkerManagement.Entities\\Models\\Employee.cs",
+              "RelativeToolTip": "WorkerManagement.Entities\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:30:11.355Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
