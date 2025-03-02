@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "StA+DKW98mT8lqxO9HvKYek3QrgjqZ4iX2TybXOMtQM=",
+  "Source": "HotelRoomReserved.API",
+  "BasePath": "_content/HotelRoomReserved.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

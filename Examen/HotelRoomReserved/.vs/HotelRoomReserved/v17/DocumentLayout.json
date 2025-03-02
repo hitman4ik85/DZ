@@ -1,0 +1,538 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\interfaces\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\interfaces\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\middlewares\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\middlewares\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B07240DA-EB8B-4C55-800A-DD6CC3F2409B}|HotelRoomReserved.API\\HotelRoomReserved.API.csproj|solutionrelative:hotelroomreserved.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E899664E-83CF-431A-872D-AE316F2ABFD9}|HotelRoomReserved.Storage\\HotelRoomReserved.Storage.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.storage\\database\\hotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E899664E-83CF-431A-872D-AE316F2ABFD9}|HotelRoomReserved.Storage\\HotelRoomReserved.Storage.csproj|solutionrelative:hotelroomreserved.storage\\database\\hotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.entities\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|solutionrelative:hotelroomreserved.entities\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.entities\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|solutionrelative:hotelroomreserved.entities\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.entities\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|solutionrelative:hotelroomreserved.entities\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.entities\\models\\reservationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|solutionrelative:hotelroomreserved.entities\\models\\reservationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.entities\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{318BBA12-17AC-4A3C-B03F-057FEA363AA3}|HotelRoomReserved.Entities\\HotelRoomReserved.Entities.csproj|solutionrelative:hotelroomreserved.entities\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\createreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\createreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\addroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\addroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|d:\\it step shag\\!!!!!!!pk kurs!!!!!!!!\\asp.net\\examen\\test2\\hotelroomreserved\\hotelroomreserved.core\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F6221F-7C46-4C32-B8A2-7AD5890A931D}|HotelRoomReserved.Core\\HotelRoomReserved.Core.csproj|solutionrelative:hotelroomreserved.core\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Storage\\Migrations\\20250302134805_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelRoomReserved.Storage\\Migrations\\20250302134805_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 25,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\UserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:54:49.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Security\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Security\\PasswordHasher.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Security\\PasswordHasher.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Security\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:41:30.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\appsettings.json",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\appsettings.json",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\appsettings.json",
+              "RelativeToolTip": "HotelRoomReserved.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-02T14:40:37.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Mapping\\MappingProfile.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:40:02.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ExceptionFilter.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Filters\\ExceptionFilter.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\Filters\\ExceptionFilter.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Filters\\ExceptionFilter.cs",
+              "RelativeToolTip": "HotelRoomReserved.API\\Filters\\ExceptionFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:31:16.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Middlewares\\LoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\Middlewares\\LoggingMiddleware.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Middlewares\\LoggingMiddleware.cs",
+              "RelativeToolTip": "HotelRoomReserved.API\\Middlewares\\LoggingMiddleware.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:18:23.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\Controllers\\ReservationController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "HotelRoomReserved.API\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:12:54.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\Controllers\\RoomController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "HotelRoomReserved.API\\Controllers\\RoomController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA6wDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:12:09.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "HotelRoomReserved.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:10:34.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RoomDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\RoomDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\RoomDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\RoomDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\RoomDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:08:43.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ReservationDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\ReservationDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\ReservationDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\ReservationDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\ReservationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:08:24.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateUserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\UpdateUserDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\UpdateUserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\UpdateUserDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\UpdateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:07:58.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateReservationDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\CreateReservationDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\CreateReservationDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\CreateReservationDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\CreateReservationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:07:30.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddRoomDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\AddRoomDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\AddRoomDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\AddRoomDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\AddRoomDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:07:10.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\LoginDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:06:47.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterUserDTO.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\RegisterUserDTO.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\DTOs\\RegisterUserDTO.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\DTOs\\RegisterUserDTO.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\DTOs\\RegisterUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:06:23.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Services\\ReservationService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Services\\ReservationService.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Services\\ReservationService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:01:37.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Services\\RoomService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Services\\RoomService.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Services\\RoomService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAA+wF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T14:00:27.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Services\\AuthService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Services\\AuthService.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Services\\AuthService.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAuwK4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:58:19.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IReservationService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Interfaces\\IReservationService.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Interfaces\\IReservationService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Interfaces\\IReservationService.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Interfaces\\IReservationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:57:10.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRoomService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Interfaces\\IRoomService.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Interfaces\\IRoomService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Interfaces\\IRoomService.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Interfaces\\IRoomService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:56:57.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Core\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Core\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "HotelRoomReserved.Core\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:56:40.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250302134805_Init.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Storage\\Migrations\\20250302134805_Init.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Storage\\Migrations\\20250302134805_Init.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Storage\\Migrations\\20250302134805_Init.cs",
+              "RelativeToolTip": "HotelRoomReserved.Storage\\Migrations\\20250302134805_Init.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:48:06.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Program.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.API\\Program.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.API\\Program.cs",
+              "RelativeToolTip": "HotelRoomReserved.API\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAA8AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:42:06.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HotelContext.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Storage\\Database\\HotelContext.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Storage\\Database\\HotelContext.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Storage\\Database\\HotelContext.cs",
+              "RelativeToolTip": "HotelRoomReserved.Storage\\Database\\HotelContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:41:44.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReservationStatus.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\ReservationStatus.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Entities\\Models\\ReservationStatus.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\ReservationStatus.cs",
+              "RelativeToolTip": "HotelRoomReserved.Entities\\Models\\ReservationStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:37:57.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Entities\\Models\\Reservation.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\Reservation.cs",
+              "RelativeToolTip": "HotelRoomReserved.Entities\\Models\\Reservation.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:37:30.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Entities\\Models\\Room.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\Room.cs",
+              "RelativeToolTip": "HotelRoomReserved.Entities\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:37:04.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Entities\\Models\\UserRole.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\UserRole.cs",
+              "RelativeToolTip": "HotelRoomReserved.Entities\\Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:36:43.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\User.cs",
+              "RelativeDocumentMoniker": "HotelRoomReserved.Entities\\Models\\User.cs",
+              "ToolTip": "D:\\IT Step Shag\\!!!!!!!PK Kurs!!!!!!!!\\ASP.NET\\Examen\\Test2\\HotelRoomReserved\\HotelRoomReserved.Entities\\Models\\User.cs",
+              "RelativeToolTip": "HotelRoomReserved.Entities\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T13:36:09.591Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
