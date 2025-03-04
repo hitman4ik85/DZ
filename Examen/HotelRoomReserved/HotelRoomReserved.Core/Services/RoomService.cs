@@ -22,7 +22,7 @@ public class RoomService : IRoomService
     {
         return await _context.Rooms
             .Select(r => _mapper.Map<RoomDTO>(r))
-            .ToListAsync(cancellationToken);
+            .ToArrayAsync(cancellationToken);
     }
 
     public async Task<RoomDTO> GetRoomByIdAsync(int id, CancellationToken cancellationToken = default)
