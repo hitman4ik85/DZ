@@ -125,7 +125,7 @@ public class AuthService : IAuthService
         var users = await _context.Users
             .Skip((page - 1) * pageSize)
             .Take(pageSize)
-            .ToListAsync(cancellationToken);
+            .ToArrayAsync(cancellationToken);
 
         return _mapper.Map<IEnumerable<UserDTO>>(users);
     }
